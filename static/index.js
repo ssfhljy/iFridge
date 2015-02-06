@@ -10,8 +10,8 @@ $(document).ready(function(){
 		$("#cameraInput").click();
 	});
 
-	$(".inputgroup>.checkbox").click(function(){
-		$("inputgroup").hide();
+	$(".cb").click(function(){
+		$(this).hide();
 	});
 
 });
