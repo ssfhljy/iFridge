@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html>
 	<head>
 		<!-- set UTF-8 character set -->
 		<meta charset="utf-8" />
@@ -20,6 +20,8 @@
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 
 		<script src="index.js"></script>
+
+		<!-- jQuery -->
 
 		<title>iFridge</title>
 
@@ -43,14 +45,19 @@
 				font-size: 2em;
 				margin: 0.5em;
 			}
-			.input-group-addon{
-				font: 1em helvetica;
-				/*text-align: center;*/
+			.panel{
+				font: 2em hevetica;
+				text-align: left;
 				padding: 0.5em;
 			}
 			.panel:hover{
 				background-color: rgba(222,222,222,0.5);
 			}
+
+			.disp{
+				text-decoration: line-through;
+			}
+
 		</style>
 	</head>
 
@@ -61,43 +68,28 @@
 			<nav class="navbar navbar-default">
 				<a href="index.html"><span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span></a>
 				<a href="#"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></a>
+				<input type="text" id="searchBar"/>
 				<a href="#"><span class="glyphicon glyphicon-camera" aria-hidden="true"></span></a>
-				<input type="file" capture="camera" accept="image/*" id="cameraInput" hidden="hidden"/>
 				<a href="#"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span></a>
   			</nav>
 
+  			<h1><center>Fruits</center></h1>
+			
 			<!-- categories -->
-<!-- 			<div class="panel panel-primary"><a href="#">Fruit</a></div>
-			<div class="panel panel-primary"><a href="#">Vegetable</a></div>
-			<div class="panel panel-primary"><a href="#">Diary</a></div>
-			<div class="panel panel-primary"><a href="#">Meat</a></div> -->
-			<!-- <div class="row"> -->
-				<div class="col-lg-6 cb">
-					<input type="checkbox">Blueberry
-				</div>
-				<div class="col-lg-6 cb">
-					<input type="checkbox">Blueberry
-				</div>
-				<div class="col-lg-6 cb">
-					<input type="checkbox">Blueberry
-				</div>
-			<!-- </div> -->
+			<div class="panel panel-primary"><a href="item.html"><font color="yellow">Blueberry</font></a></div>
+			<div class="panel panel-primary"><a href="#">Apple</a></div>
+		    <hr>
+		    <h2><center>---------------disposed----------------</center></h2>
+		    <div class="panel panel-primary disp"><a href="#"><font color="red">Orange</font></a></div>
+		    <div class="panel panel-primary disp"><a href="#"><font color="red">WaterMelon</font></a></div>
 
-			<!-- 		
-			<div class="panel panel-success">Fruits</div>
+<!-- 			<div class="panel panel-success">Fruits</div>
 			<div class="panel panel-info">Vegetables</div>
 			<div class="panel panel-warning">Meat</div>
-			<div class="panel panel-danger">Drink</div>
-			-->
+			<div class="panel panel-danger">Drink</div> -->
 
 		</div>
+
 	</body>
 
 </html>
-
-<!-- div {}
-
-#id {}
-
-.class {} -->
-

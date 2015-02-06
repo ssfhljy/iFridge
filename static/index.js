@@ -4,7 +4,9 @@
 
 $(document).ready(function(){
 	//alert("ready");
-	$("input").hide();
+
+	$("#cameraInput").hide();
+	$("#searchBar").hide();
 	$(".glyphicon-camera").click(function(e){
 		e.preventDefault();
 		$("#cameraInput").click();
@@ -14,4 +16,12 @@ $(document).ready(function(){
 		$(this).hide();
 	});
 
+});
+
+
+$(document).ready(function(){
+	$(".glyphicon-search").click(function(e){
+		e.preventDefault();
+		$("#searchBar").toggle();
+	});
 });
