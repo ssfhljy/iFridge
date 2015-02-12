@@ -1,5 +1,5 @@
 {
-	"item": [
+	"items": [
 		{
 			"name": "Blueberries",
 			"imageURL": "http://www.elementsbathandbody.com/images/T/BlueberryLemonVerb.jpg",
@@ -48,12 +48,12 @@
 			"note": ""
 		},
 		{
-			"name": "Mushroomes",
+			"name": "Mushroom",
 			"imageURL": "http://www.mushrooms.ca/images/mushroom-group.png",
 			"dateExp": "2/24/15",
 			"dateAdded": "",
 			"category": "Vegetables",
 			"note": ""
-		},
+		}
 	]
 }

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- set UTF-8 character set -->
+		<meta charset="utf-8" />
+
+		<!-- jQuery -->
+		<script src="https://code.jquery.com/jquery.js"></script>
+
+		<!-- device dependent rendering & disable touch zooming -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" />
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css" />
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+		<script src="/js/index.js"></script>
+
+		<link rel="stylesheet" href="/css/style.css" />
+		
+		<title>iFridge</title>
+
+<!-- 		<style type="text/css">
+			a, a:hover, a:focus, a:link, a:visited, a:active{
+				text-decoration:none;
+			}
+/*			a:hover{
+				text-decoration: none;
+			}*/
+
+
+/*			input{
+				font-size: 2em;
+			}*/
+
+			.container{
+				background-color: rgba(222,222,222,0.5);
+			}
+			.glyphicon{
+				font-size: 2em;
+				margin: 0.5em;
+			}
+			.panel{
+				font: 2em hevetica;
+				text-align: left;
+				padding: 0.5em;
+			}
+			.panel:hover{
+				background-color: rgba(222,222,222,0.5);
+			}
+
+			.disp{
+				text-decoration: line-through;
+			}
+			.line{
+				height: 0.1em;
+				/*color: black;*/
+			}
+			.countdown{
+				display:inline-block;
+			}
+
+		</style> -->
+	</head>
+
+	<body>
+		<div class="container">
+
+			<!-- navigation bar -->
+
+  			<nav class="navbar navbar-default">
+  				<a href="/"><span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span></a>
+				<a href="#"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></a>
+				<input type="text" id="searchBar"/>
+				<a href="#"><span class="glyphicon glyphicon-camera" aria-hidden="true"></span></a>
+				<input type="file" capture="camera" accept="image/*" id="cameraInput" hidden="hidden"/>
+				<a href="#"><span class="glyphicon" id="cancel" aria-hidden="true">cancel</span></a>
+				<a href="#"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span></a>
+  			</nav>
+
+  			<h1><center>Fruits</center></h1>
+			
+			<!-- items in a category -->
+			{{#each items}}
+			<div class="panel panel-primary"><a href="item.html"><font color="yellow">{{name}}</font></a></div>
+			<div class = "countdown"> {{daysBeforeExpire}} </div>
+			{{/each}}
+
+		</div>
+
+	</body>
+
+</html>
