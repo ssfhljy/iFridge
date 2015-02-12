@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html>
 	<head>
 		<!-- set UTF-8 character set -->
 		<meta charset="utf-8" />
@@ -19,13 +19,13 @@
 		<!-- Latest compiled and minified JavaScript -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 
-		<link rel="stylesheet" href="style.css" />
 		<script src="index.js"></script>
 
+		<!-- jQuery -->
 
 		<title>iFridge</title>
-		
-<!-- 		<style type="text/css">
+
+		<style type="text/css">
 			a, a:hover, a:focus, a:link, a:visited, a:active{
 				text-decoration:none;
 			}
@@ -39,8 +39,7 @@
 			}*/
 
 			.container{
-				/*background-color: rgba(222,222,222,0.5);*/
-				background-image:url(fruit.jpg);
+				background-color: rgba(222,222,222,0.5);
 			}
 			.glyphicon{
 				font-size: 2em;
@@ -48,48 +47,49 @@
 			}
 			.panel{
 				font: 2em hevetica;
-				text-align: center;
+				text-align: left;
 				padding: 0.5em;
 			}
 			.panel:hover{
 				background-color: rgba(222,222,222,0.5);
 			}
+
+			.disp{
+				text-decoration: line-through;
+			}
+			.line{
+				height: 0.1em;
+				/*color: black;*/
+			}
+			.countdown{
+				display:inline-block;
+			}
+
 		</style>
- -->	</head>
+	</head>
 
 	<body>
 		<div class="container">
 
 			<!-- navigation bar -->
 			<nav class="navbar navbar-default">
+				<a href="index.html"><span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span></a>
 				<a href="#"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></a>
 				<input type="text" id="searchBar"/>
 				<a href="#"><span class="glyphicon glyphicon-camera" aria-hidden="true"></span></a>
-				<input type="file" capture="camera" accept="image/*" id="cameraInput" hidden="hidden"/>
 				<a href="#"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span></a>
   			</nav>
 
+  			<h1><center>Fruits</center></h1>
+			
 			<!-- categories -->
-			<div class="panel panel-primary"><a href="list.html">Fruit</a></div>
-			<div class="panel panel-primary"><a href="#">Vegetable</a></div>
-			<div class="panel panel-primary"><a href="#">Diary</a></div>
-			<div class="panel panel-primary"><a href="#">Meat</a></div>
-
-			<!-- 		
-			<div class="panel panel-success">Fruits</div>
-			<div class="panel panel-info">Vegetables</div>
-			<div class="panel panel-warning">Meat</div>
-			<div class="panel panel-danger">Drink</div>
-			-->
+			{{each items}}
+			<div class="panel panel-primary"><a href="item.html"><font color="yellow">{{name}}</font></a></div>
+			<div class = "countdown"> {{daysBeforeExpire}} </div>
+			{{/each}}
 
 		</div>
+
 	</body>
 
 </html>
-
-<!-- div {}
-
-#id {}
-
-.class {} -->
-
