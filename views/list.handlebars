@@ -19,7 +19,7 @@
 		<!-- Latest compiled and minified JavaScript -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 
-		<script src="/js/index.js"></script>
+		<script src="/js/navbar.js"></script>
 
 		<link rel="stylesheet" href="/css/style.css" />
 		
@@ -83,11 +83,13 @@
 				<a href="#"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span></a>
   			</nav>
 
-  			<h1><center>Fruits</center></h1>
+			<h1><center>Fruits</center></h1>
+
+			{{#each items}}
 			
 			<!-- items in a category -->
-			{{#each items}}
-			<div class="panel panel-primary"><a href="item.html"><font color="yellow">{{name}}</font></a></div>
+			
+			<div class="panel panel-primary"><a href="/item/{{iid}}">{{name}}</a></div>
 			<div class = "countdown"> {{daysBeforeExpire}} </div>
 			{{/each}}
 

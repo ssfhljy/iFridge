@@ -2,37 +2,42 @@
 	"items": [
 		{
 			"name": "Blueberries",
+			"iid": "0",
 			"imageURL": "http://www.elementsbathandbody.com/images/T/BlueberryLemonVerb.jpg",
 			"dateExp": "2/16/15",
 			"dateAdded": "",
-			"category": "Fruit",
+			"category": "Fruits",
 			"note": ""
 		},
 		{
 			"name": "Strawberries",
+			"iid": "1",
 			"imageURL": "http://www.crossroadsvapor.com/zen1/images/strawberry.jpg",
 			"dateExp": "2/18/15",
 			"dateAdded": "",
-			"category": "Fruit",
+			"category": "Fruits",
 			"note": ""
 		},
 		{
 			"name": "Apples",
+			"iid": "2",
 			"imageURL": "https://thetasteoforegon.files.wordpress.com/2009/09/bowl-of-apples-21.jpg",
 			"dateExp": "2/25/15",
 			"dateAdded": "",
-			"category": "Fruit",
+			"category": "Fruits",
 			"note": ""
 		},{
 			"name": "Bananas",
+			"iid": "3",
 			"imageURL": "http://fitnessandhealthadvisor.com/wp-content/uploads/2013/05/bananas1.jpeg",
 			"dateExp": "2/20/15",
 			"dateAdded": "",
-			"category": "Fruit",
+			"category": "Fruits",
 			"note": ""
 		},
 		{
 			"name": "Milk",
+			"iid": "4",
 			"imageURL": "http://i.huffpost.com/gen/1124795/thumbs/o-MILK-facebook.jpg",
 			"dateExp": "2/23/15",
 			"dateAdded": "",
@@ -41,6 +46,7 @@
 		},
 		{
 			"name": "Cheese",
+			"iid": "5",
 			"imageURL": "http://cdn.phillymag.com/wp-content/uploads/2014/09/CheeseAssortment1.jpg",
 			"dateExp": "2/28/15",
 			"dateAdded": "",
@@ -49,6 +55,7 @@
 		},
 		{
 			"name": "Mushroom",
+			"iid": "6",
 			"imageURL": "http://www.mushrooms.ca/images/mushroom-group.png",
 			"dateExp": "2/24/15",
 			"dateAdded": "",

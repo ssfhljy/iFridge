@@ -1,0 +1,20 @@
+{
+	"categories": [
+		{
+			"catName": "Fruits",
+			"cid": "0"
+		},
+		{
+			"catName": "Diary",
+			"cid": "1"
+		},
+		{
+			"catName": "Vegetables",
+			"cid": "2"
+		},
+		{
+			"catName": "Meat",
+			"cid": "3"
+		}
+	]
+}

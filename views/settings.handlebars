@@ -19,63 +19,41 @@
 		<!-- Latest compiled and minified JavaScript -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 
-		<link rel="stylesheet" href="/css/style.css" />
 		<script src="/js/navbar.js"></script>
-
+		<script src="/js/util.js"></script>
+		<link rel="stylesheet" href="/css/style.css" />
 
 		<title>iFridge</title>
-		
-<!-- 		<style type="text/css">
-			a, a:hover, a:focus, a:link, a:visited, a:active{
-				text-decoration:none;
-			}
-/*			a:hover{
-				text-decoration: none;
-			}*/
 
-
-/*			input{
-				font-size: 2em;
-			}*/
-
-			.container{
-				/*background-color: rgba(222,222,222,0.5);*/
-				background-image:url(fruit.jpg);
-			}
-			.glyphicon{
-				font-size: 2em;
-				margin: 0.5em;
-			}
-			.panel{
-				font: 2em hevetica;
-				text-align: center;
-				padding: 0.5em;
-			}
-			.panel:hover{
-				background-color: rgba(222,222,222,0.5);
-			}
-		</style>
- -->	</head>
+	</head>
 
 	<body>
 		<div class="container">
 
 			<!-- navigation bar -->
-			<nav class="navbar navbar-default">
+  			<nav class="navbar navbar-default">
+  				<a href="/"><span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span></a>
 				<a href="#"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></a>
 				<input type="text" id="searchBar"/>
 				<a href="#"><span class="glyphicon glyphicon-camera" aria-hidden="true"></span></a>
 				<input type="file" capture="camera" accept="image/*" id="cameraInput" hidden="hidden"/>
 				<a href="#"><span class="glyphicon" id="cancel" aria-hidden="true">cancel</span></a>
-				<a href="/settings"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span></a>
+				<a href="#"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span></a>
   			</nav>
 
-			<!-- list of categories -->
-			{{#each categories}}
-				<div class="panel panel-warning" id="{{cid}}">
-					<a href="/list/{{cid}}">{{catName}}</a>
+			<!-- item details -->
+			<div>
+				<!-- TODO: color & notification settings -->
+
+				<!-- user info & logout -->
+				<div id="user">
+				<hr/>
+				<h4>Current User: </h4>
+				<h3 id="userInfo">j4tao</h3>
+				<button id="logout">Sign Out</button>
 				</div>
-			{{/each}}
+			</div>
+
 		</div>
 	</body>
 
