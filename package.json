@@ -1,5 +1,4 @@
 {
-<<<<<<< HEAD
   "name": "IntroHCI",
   "version": "0.0.1",
   "author": "Intro HCI Staff",
@@ -21,7 +20,6 @@
   "engines": {
     "node": "0.10.x"
   }  
-=======
   "name": "cs147-lab-1",
   "description": "Serving static content via html files",
   "version": "0.0.1",
