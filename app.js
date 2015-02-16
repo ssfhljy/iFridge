@@ -20,6 +20,8 @@ var login = require('./routes/login');
 
 var settings = require('./routes/settings');
 
+var add = require('./routes/add');
+
 var app = express();
 
 // all environments
@@ -48,6 +50,7 @@ app.get('/list/:id', list.showList);
 app.get('/item/:id', item.showItem);
 app.get('/login', login.signIn);
 app.get('/settings', settings.config);
+app.get('/add',add.addItem);
 // Example route
 // app.get('/users', user.list);
 

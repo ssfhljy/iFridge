@@ -148,3 +148,14 @@ nav{
 	text-align: center;
 }
 
+#addForm {
+	text-align: center;
+}
+
+#submitBtn {
+	text-align: center;
+}
+#Btn{
+	padding: 0.25em;
+	margin: 1em;
+}
