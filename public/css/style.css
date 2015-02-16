@@ -89,7 +89,8 @@ button {
 
 a, a:hover, a:focus, a:link, a:visited, a:active{
 	text-decoration:none;
-	color: rgba(250,150,50,0.8);/*rgba(205, 133, 63, 0.8);*/
+	/*color: rgba(250,150,50,0.8);rgba(205, 133, 63, 0.8);*/
+	color: rgba(255,150,0,1);/*rgba(205, 133, 63, 0.8);*/
 
 }
 /*			a:hover{
@@ -150,6 +151,10 @@ nav{
 	border: 0em;
 	background-color: rgba(255,255,255,0.4);
 }
+.panelB{
+	background-color: rgba(255,255,255,0.4);
+}
+
 
 .panel:hover{
 	/*background-color: rgba(222,222,222,0.8);*/
@@ -174,4 +179,32 @@ nav{
 	margin-left: 25%;
 	width: 50%;
 	text-align: center;
+}
+
+#FruitsCategory{
+	font: 2.8em helvetica bold;
+	font-weight: 300;
+	text-align: center;
+	/*color: rgba(255,104,33,1);*/
+
+}
+
+
+#addForm{
+	text-align: center;
+	color: rgba(255,150,20,1);/*rgba(205, 133, 63, 0.8);*/
+}
+
+
+#Btn{
+	text-align: center;
+	padding: 0.25em;
+	margin: 1em;
+color: rgba(255,150,0,1);/*rgba(205, 133, 63, 0.8);*/
+background-color: rgba(255,255,255,0.5);
+border: 0;
+}
+
+#Btn:hover{
+	background-color: rgba(255,255,255,0.8);
 }
