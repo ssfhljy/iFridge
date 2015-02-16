@@ -89,8 +89,9 @@
 			{{#each items}}
 			
 			<!-- items in a category -->
-			
-			<div class="panel panel-primary" id="cname"><a class="clickable" href="/item/{{iid}}">{{name}}</a></div>
+			<a class="clickable" href="/item/{{iid}}">
+			<div class="panel panel-primary" id="cname">{{name}}</div>
+			</a>
 			<div class = "countdown"> {{daysBeforeExpire}} </div>
 			{{/each}}
 

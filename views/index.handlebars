@@ -73,9 +73,13 @@
 
 			<!-- list of categories -->
 			{{#each categories}}
-				<div class="panel panel-warning" id="{{cid}}">
-					<a class="clickable" href="/list/{{cid}}">{{catName}}</a>
-				</div>
+				<!-- <div class="panel panel-warning" id="{{cid}}"> -->
+					<a class="clickable" href="/list/{{cid}}">
+					<div class="panel panel-warning" id="{{cid}}">
+					{{catName}}
+					</div>
+					</a>
+				<!-- </div> -->
 			{{/each}}
 		</div>
 	</body>
