@@ -15,7 +15,7 @@
 
 		<!-- Optional theme -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css" />
-
+<!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-responsive.css" rel="stylesheet"> -->
 		<!-- Latest compiled and minified JavaScript -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 
@@ -29,7 +29,7 @@
 
 	<body>
 		<div class="container">
-
+			<div class="col-xs-12">
 			<!-- navigation bar -->
   			<nav class="navbar navbar-default">
   				<a href="/list/{{iid}}"><span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span></a>
@@ -40,16 +40,19 @@
 				<input type="file" capture="camera" accept="image/*" id="cameraInput" hidden="hidden"/>
 				<a href="#"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span></a>
   			</nav>
-
+  			</div>
 			<!-- item details -->
-			<div>
-				<img src="{{imageURL}}">
-				<h4>{{name}}<!-- Blueberry --></h4>
-				<p>Expire: {{dateExp}}</p>
-				<p>Category: {{category}}</p>
-				<!-- <p>Added on: </p> -->
+			<div class="row">
+				<div class="col-xs-12">
+					<img class="itemImg" src="{{imageURL}}">
+				</div>
+				<div class="col-xs-12">
+					<h4>{{name}}<!-- Blueberry --></h4>
+					<p>Expire: {{dateExp}}</p>
+					<p>Category: {{category}}</p>
+					<!-- <p>Added on: </p> -->
+				</div>
 			</div>
-
 		</div>
 	</body>
 
