@@ -163,14 +163,21 @@ nav{
 	text-align: center;
 }
 
-/*.itemImg{
-	width: 50%;
-}*/
-
 #FruitsCategory{
 	font: 2.8em helvetica bold;
 	font-weight: 300;
 	text-align: center;
 	/*color: rgba(255,104,33,1);*/
+
+#addForm {
+	text-align: center;
+}
+
+#submitBtn {
+	text-align: center;
+}
+#Btn{
+	padding: 0.25em;
+	margin: 1em;
 
 }
