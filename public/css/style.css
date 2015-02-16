@@ -107,7 +107,9 @@ a, a:hover, a:focus, a:link, a:visited, a:active{
 	/*background-image: url(/img/fruit.jpg);*/
 
 	background-image: url(/img/food.png);
+	background-repeat: repeat;
 	padding: 1em;
+	padding-bottom: 10em;
 	/*background-image: url(/img/restaurant_icons.png);*/
 	/*background-repeat: no-repeat;*/
 	/*background-size: 100%;*/
