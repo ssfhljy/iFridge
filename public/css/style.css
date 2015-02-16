@@ -7,8 +7,8 @@
 
 .lg-container{
 	/*background-image:url(/img/fruit.jpg);*/
-	width:25em;
-	margin:2em auto;
+	width:22em;
+	margin:2em;
 	padding:1em 1em;
 	border:1px solid #f4f4f4;
 	background:rgba(255,255,255,.5);
@@ -102,9 +102,17 @@ a, a:hover, a:focus, a:link, a:visited, a:active{
 	}*/
 
 .container{
+
 	/*background-image: url(/img/fruit.jpg);*/
-	 /*background-repeat: no-repeat;*/
-	background-color: rgba(222,222,222,0.5);
+
+	background-image: url(/img/food.png);
+	padding: 1em;
+	/*background-image: url(/img/restaurant_icons.png);*/
+	/*background-repeat: no-repeat;*/
+	/*background-size: 100%;*/
+
+
+	/*background-color: rgba(222,222,222,0.5);*/
 }
 
 .blur {	
@@ -119,8 +127,9 @@ a, a:hover, a:focus, a:link, a:visited, a:active{
 }
 
 nav{
-	margin: 0.5em;
+	/*margin: 0.5em;*/
 	text-align: center;
+	background-color: rgba(255,255,255,0.4);
 }
 .glyphicon{
 	font-size: 2em;
@@ -130,17 +139,22 @@ nav{
 #cancel{font-size: 2em;}
 
 .panel{
-	/*font: 2em helvetica bold;*/
-	font-size: 2em;
-	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+	font: 2.5em helvetica bold;
+	/*font-size: 2em;*/
+	/*font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; */
     font-weight: 300;
 	text-align: center;
 	padding: 0.5em;
-	/*background-color: rgba(222,222,222,0.6);*/
+	margin: 0.1em;
+	/*background-color: rgba(222,222,222,0.4);*/
+	border: 0em;
+	background-color: rgba(255,255,255,0.4);
 }
 
 .panel:hover{
-	background-color: rgba(222,222,222,0.8);
+	/*background-color: rgba(222,222,222,0.8);*/
+
+	background-color: rgba(255,255,255,0.6);
 }
 
 #user{
