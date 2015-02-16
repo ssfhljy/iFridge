@@ -44,6 +44,7 @@
 		
 		<!-- navigation bar -->
 			<nav class="navbar navbar-default">
+			<a href="/"><span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span></a>
 				<a href="#"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></a>
 				<input type="text" id="searchBar"/>
 				<!-- <a href="#"><span class="glyphicon glyphicon-camera" aria-hidden="true"></span></a>
@@ -53,8 +54,9 @@
 				<a href="/settings"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span></a>
   			</nav>
 
-
+<div class="panelB panelB-primary"><a href="/item/{{iid}}"></a>
 		<form id="addForm" role="form" method="get" action="/add">
+
 			<h3>Add an Item</h3>
 	    	<div class="form-group">
 	      		<label for="name">Item Name:</label>
@@ -73,8 +75,10 @@
 
 	    	<input type="submit" id="Btn" value="Add the Item">
 	    	<input type="button" id="Btn" value="Cancel">
+	  
 		</form> 
 
+	</div>
 	</div>
 </body>
 </html>
