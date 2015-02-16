@@ -134,13 +134,16 @@ nav{
 }
 .glyphicon{
 	font-size: 2em;
-	margin: 0.5em;
+	margin: 0.2em;
 }
 
-#cancel{font-size: 2em;}
+#cancel{
+	text-align: center;
+	font-size: 1em;
+}
 
 .panel{
-	font: 2.5em helvetica bold;
+	font: 2.2em helvetica bold;
 	/*font-size: 2em;*/
 	/*font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; */
     font-weight: 300;
@@ -152,6 +155,9 @@ nav{
 	background-color: rgba(255,255,255,0.4);
 }
 .panelB{
+	margin: 1.5em;
+	padding: 2em;
+	border-radius: 1em;
 	background-color: rgba(255,255,255,0.4);
 }
 
@@ -172,17 +178,18 @@ nav{
 }
 
 #itemImg{
-	margin-left: 25%;
-	width: 50%;
+	margin-left: 20%;
+	width: 60%;
 }
 #itemInfo{
+	margin-top: 10%;
 	margin-left: 25%;
 	width: 50%;
 	text-align: center;
 }
 
 #FruitsCategory{
-	font: 2.8em helvetica bold;
+	font: 2.3em helvetica bold;
 	font-weight: 300;
 	text-align: center;
 	/*color: rgba(255,104,33,1);*/
@@ -200,9 +207,9 @@ nav{
 	text-align: center;
 	padding: 0.25em;
 	margin: 1em;
-color: rgba(255,150,0,1);/*rgba(205, 133, 63, 0.8);*/
-background-color: rgba(255,255,255,0.5);
-border: 0;
+	color: rgba(255,150,0,1);/*rgba(205, 133, 63, 0.8);*/
+	background-color: rgba(255,255,255,0.5);
+	border: 0;
 }
 
 #Btn:hover{
