@@ -29,7 +29,7 @@
 
 	<body>
 		<div class="container">
-			<div class="col-xs-12">
+			<div class="col-sm-12">
 			<!-- navigation bar -->
   			<nav class="navbar navbar-default">
   				<a href="/list/{{iid}}"><span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span></a>
@@ -38,19 +38,21 @@
 				<a href="#"><span class="glyphicon" id="cancel" aria-hidden="true">cancel</span></a>
 				<a href="#"><span class="glyphicon glyphicon-camera" aria-hidden="true"></span></a>
 				<input type="file" capture="camera" accept="image/*" id="cameraInput" hidden="hidden"/>
-				<a href="#"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span></a>
+				<!-- <a href="#"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span></a> -->
   			</nav>
   			</div>
 			<!-- item details -->
 			<div class="row">
-				<div class="col-xs-12">
-					<img class="itemImg" src="{{imageURL}}">
+				<div class="col-sm-6">
+					<img id="itemImg" src="{{imageURL}}">
 				</div>
-				<div class="col-xs-12">
-					<h4>{{name}}<!-- Blueberry --></h4>
-					<p>Expire: {{dateExp}}</p>
-					<p>Category: {{category}}</p>
-					<!-- <p>Added on: </p> -->
+				<div class="col-sm-6">
+					<div id="itemInfo">
+						<h4>{{name}}<!-- Blueberry --></h4>
+						<p>Expire: {{dateExp}}</p>
+						<p>Category: {{category}}</p>
+						<!-- <p>Added on: </p> -->
+					</div>
 				</div>
 			</div>
 		</div>

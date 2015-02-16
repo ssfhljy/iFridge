@@ -41,6 +41,14 @@ $(document).ready(function(){
 		$("#cancel").hide();
 	});
 
+	// $(".clickable").parent().click(function(e){
+	// // 	// console.log("clicked:");
+	// // 	// alert("clickable");
+	// 	e.preventDefault();
+	// // 	// alert($this);
+	// // 	$(this).click();
+	// });
+
 /*
 	$().click(function(e){
 		e.preventDefault();
