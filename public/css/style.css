@@ -1,3 +1,8 @@
+#app{
+	font-family: 'Oleo Script', cursive;
+	text-align: center;
+}
+
 #userbody{
 	background-image:url(/img/fruit.jpg);
 	background-repeat: no-repeat;
@@ -130,18 +135,27 @@ a, a:hover, a:focus, a:link, a:visited, a:active{
 }
 
 nav{
-	/*margin: 0.5em;*/
+	margin: 0.1em;
 	text-align: center;
 	background-color: rgba(255,255,255,0.4);
+
 }
 .glyphicon{
 	font-size: 2em;
-	margin: 0.2em;
+	margin-top: 0.3em;
+	margin-left: 5%;
+	margin-right: 5%;
 }
 
 #cancel{
 	text-align: center;
-	font-size: 1em;
+	font: 1.8em helvetica bold;;
+}
+
+#searchBar{
+	margin: 0.5em;
+	width: 12em;
+	height: 2em;
 }
 
 .panel{

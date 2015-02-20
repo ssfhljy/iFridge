@@ -10,6 +10,6 @@ exports.showItem = function(req, res){
 
  	var item = data['items'][itemID]; // of by one, our first project has index 0
  	// console.log(data['items'][itemID]);
-  	// res.json(item);
+ 
   	res.render('item', item);
 };
