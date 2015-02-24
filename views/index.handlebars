@@ -22,40 +22,8 @@
 		<link rel="stylesheet" href="/css/style.css" />
 		<script src="/js/navbar.js"></script>
 
-
 		<title>iFridge</title>
-		
-<!-- 		<style type="text/css">
-			a, a:hover, a:focus, a:link, a:visited, a:active{
-				text-decoration:none;
-			}
-/*			a:hover{
-				text-decoration: none;
-			}*/
-
-
-/*			input{
-				font-size: 2em;
-			}*/
-
-			.container{
-				/*background-color: rgba(222,222,222,0.5);*/
-				background-image:url(fruit.jpg);
-			}
-			.glyphicon{
-				font-size: 2em;
-				margin: 0.5em;
-			}
-			.panel{
-				font: 2em hevetica;
-				text-align: center;
-				padding: 0.5em;
-			}
-			.panel:hover{
-				background-color: rgba(222,222,222,0.5);
-			}
-		</style>
- -->	</head>
+ 	</head>
 
 	<body>
 		<div class="container">
@@ -73,13 +41,11 @@
 
 			<!-- list of categories -->
 			{{#each categories}}
-				<!-- <div class="panel panel-warning" id="{{cid}}"> -->
-					<a class="clickable" href="/list/{{cid}}">
-					<div class="panel panel-warning" id="{{cid}}">
-					{{catName}}
-					</div>
-					</a>
-				<!-- </div> -->
+				<a class="clickable" href="/list/{{id}}">
+				<div class="panel panel-warning" id="{{id}}">
+					{{name}}
+				</div>
+				</a>
 			{{/each}}
 		</div>
 	</body>

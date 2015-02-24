@@ -1,0 +1,93 @@
+[
+	{
+        "name": "Blueberries",
+        "user": {
+            "email": "j4tao@ucsd.edu",
+            "name": "j4tao",
+            "pwd": "1234"
+        },
+        "category": {"name": "Fruits"},
+        "imageURL": "http://www.elementsbathandbody.com/images/T/BlueberryLemonVerb.jpg",
+        "dateExp": "2/16/2015",
+        "dateAdded": "2/1/2015",
+        "note": ""
+    },
+    {
+        "name": "Strawberries",
+        "user": {
+            "email": "j4tao@ucsd.edu",
+            "name": "j4tao",
+            "pwd": "1234"
+        },
+        "category": {"name": "Fruits"},
+        "imageURL": "http://www.crossroadsvapor.com/zen1/images/strawberry.jpg",
+        "dateExp": "2/18/2015",
+        "dateAdded": "2/1/2015",
+        "note": ""
+    },
+    {
+        "name": "Apples",
+        "user": {
+            "email": "j4tao@ucsd.edu",
+            "name": "j4tao",
+            "pwd": "1234"
+        },
+        "category": {"name": "Fruits"},
+        "imageURL": "https://thetasteoforegon.files.wordpress.com/2009/09/bowl-of-apples-21.jpg",
+        "dateExp": "2/25/2015",
+        "dateAdded": "2/1/2015",
+        "note": ""
+    },
+    {
+        "name": "Bananas",
+        "user": {
+            "email": "j4tao@ucsd.edu",
+            "name": "j4tao",
+            "pwd": "1234"
+        },
+        "category": {"name": "Fruits"},
+        "imageURL": "http://fitnessandhealthadvisor.com/wp-content/uploads/2013/05/bananas1.jpeg",
+        "dateExp": "2/20/2015",
+        "dateAdded": "2/1/2015",
+        "note": ""
+    },
+	{
+        "name": "Milk",
+        "user": {
+            "email": "j4tao@ucsd.edu",
+            "name": "j4tao",
+            "pwd": "1234"
+        },
+        "category": {"name": "Dairy"},
+        "imageURL": "http://i.huffpost.com/gen/1124795/thumbs/o-MILK-facebook.jpg",
+        "dateExp": "2/23/2015",
+        "dateAdded": "2/1/2015",
+        "note": ""
+    },
+    {
+        "name": "Cheese",
+        "user": {
+            "email": "j4tao@ucsd.edu",
+            "name": "j4tao",
+            "pwd": "1234"
+        },
+        "category": {"name": "Dairy"},
+        "imageURL": "http://cdn.phillymag.com/wp-content/uploads/2014/09/CheeseAssortment1.jpg",
+        "dateExp": "2/28/2015",
+        "dateAdded": "2/1/2015",
+        "note": ""
+    },
+    {
+        "name": "Mushroom",
+        "user": {
+            "email": "j4tao@ucsd.edu",
+            "name": "j4tao",
+            "pwd": "1234"
+        },
+        "category": {"name": "Vegetables"},
+        "imageURL": "http://www.mushrooms.ca/images/mushroom-group.png",
+        "dateExp": "2/24/2015",
+        "dateAdded": "2/1/2015",
+        "note": ""
+    }
+]

@@ -1,0 +1,65 @@
+[
+	{
+        "name": "Blueberries",
+        "user": {"_id": "507f1f7733389439011"},
+        "category": {"_id": "507f1f77bcf86cd799439011"},
+        "imageURL": "http://www.elementsbathandbody.com/images/T/BlueberryLemonVerb.jpg",
+        "dateExp": "2/16/2015",
+        "dateAdded": "2/1/2015",
+        "note": ""
+    },
+    {
+        "name": "Strawberries",
+        "user": {"_id": "507f1f7733389439011"},
+        "category": {"_id": "507f1f77bcf86cd799439011"},
+        "imageURL": "http://www.crossroadsvapor.com/zen1/images/strawberry.jpg",
+        "dateExp": "2/18/2015",
+        "dateAdded": "2/1/2015",
+        "note": ""
+    },
+    {
+        "name": "Apples",
+        "user": {"_id": "507f1f7733389439011"},
+        "category": {"_id": "507f1f77bcf86cd799439011"},
+        "imageURL": "https://thetasteoforegon.files.wordpress.com/2009/09/bowl-of-apples-21.jpg",
+        "dateExp": "2/25/2015",
+        "dateAdded": "2/1/2015",
+        "note": ""
+    },
+    {
+        "name": "Bananas",
+        "user": {"_id": "507f1f7733389439011"},
+        "category": {"_id": "507f1f77bcf86cd799439011"},
+        "imageURL": "http://fitnessandhealthadvisor.com/wp-content/uploads/2013/05/bananas1.jpeg",
+        "dateExp": "2/20/2015",
+        "dateAdded": "2/1/2015",
+        "note": ""
+    },
+	{
+        "name": "Milk",
+        "user": {"_id": "507f1f7733389439011"},
+        "category": {"_id": "507f191e810c19729de860ea"},
+        "imageURL": "http://i.huffpost.com/gen/1124795/thumbs/o-MILK-facebook.jpg",
+        "dateExp": "2/23/2015",
+        "dateAdded": "2/1/2015",
+        "note": ""
+    },
+    {
+        "name": "Cheese",
+        "user": {"_id": "507f1f7733389439011"},
+        "category": {"_id": "507f191e810c19729de860ea"},
+        "imageURL": "http://cdn.phillymag.com/wp-content/uploads/2014/09/CheeseAssortment1.jpg",
+        "dateExp": "2/28/2015",
+        "dateAdded": "2/1/2015",
+        "note": ""
+    },
+    {
+        "name": "Mushroom",
+        "user": {"_id": "507f1f7733389439011"},
+        "category": {"_id": "507f191e810c19729de12345"},
+        "imageURL": "http://www.mushrooms.ca/images/mushroom-group.png",
+        "dateExp": "2/24/2015",
+        "dateAdded": "2/1/2015",
+        "note": ""
+    }
+]

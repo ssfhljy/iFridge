@@ -1,15 +1,18 @@
 // Get all of our friend data
-var data = require('../data.json');
+// var models = require('../models/items');
+var models = require('../models/models');
 
 exports.showItem = function(req, res){
-	// console.log(data);
-	// res.render('item', data);
-	var itemID = req.params.id;
-	// console.log(itemID);
-	itemID = parseInt(itemID);
 
- 	var item = data['items'][itemID]; // of by one, our first project has index 0
- 	// console.log(data['items'][itemID]);
-  	// res.json(item);
-  	res.render('item', item);
+  	var id = req.params.id;
+  		
+	models.Item.find({"_id":id}).exec(afterQuery);
+
+	function afterQuery(err, item) {
+		console.log("test~~~: "+item.toString());
+		if(err) console.log(err);
+		console.log("item:"+item+"\n");
+		res.render('item', { 'item':item});
+		// res.json(list);
+	}
 };

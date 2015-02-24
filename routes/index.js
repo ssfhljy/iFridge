@@ -1,8 +1,16 @@
 // Get all of our friend data
-var data = require('../category.json');
-var item = require('../data.json');
+// var itemModel = require('../models/items');
+var models = require('../models/models');
 
 exports.view = function(req, res){
-	console.log(item);
-	res.render('index', data);
+
+	models.Category.find().exec(afterQuery);
+
+	function afterQuery(err, categories) {
+
+		if(err) console.log(err);
+
+		res.render('index', { 'categories': categories });
+		// res.json(categories);
+	}
 };

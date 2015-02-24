@@ -1,4 +1,4 @@
-var data = require("../data.json");
+// var models = require('../models/items');
 
 exports.addItem = function(req, res) {    
 	// Your code goes here

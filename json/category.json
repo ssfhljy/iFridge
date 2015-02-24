@@ -1,0 +1,18 @@
+[
+	{
+		"_id": "507f1f77bcf86cd799439011",
+		"name": "Fruits"
+	},
+	{
+		"_id": "507f191e810c19729de860ea",
+		"name": "Dairy"
+	},
+	{
+		"_id": "507f191e810c19729de12345",
+		"name": "Vegetables"
+	},
+	{
+		"_id": "507f1f77bcf86cd722239011",
+		"name": "Meat"
+	}
+]
