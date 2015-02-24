@@ -15,4 +15,5 @@ exports.showItem = function(req, res){
 		res.render('item', { 'item':item});
 		// res.json(list);
 	}
+
 };
