@@ -113,6 +113,7 @@ a, a:hover, a:focus, a:link, a:visited, a:active{
 
 	background-image: url(/img/food.png);
 	background-repeat: repeat;
+	background-attachment: fixed;
 	padding: 1em;
 	padding-bottom: 10em;
 	/*background-image: url(/img/restaurant_icons.png);*/
