@@ -1,3 +1,5 @@
+// Get all of our friend data
+// var models = require('../models/items');
 
 var models = require('../models/models');
 
