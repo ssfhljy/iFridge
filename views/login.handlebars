@@ -1,23 +1,28 @@
 <!DOCTYPE HTML>
 
 <head>
-	<meta charset="UTF-8">
-	<html lang="en-US">
-	<!-- full-screen mobile app experience (after save to home screen) -->
-	<meta name="apple-mobile-web-app-capable" content="yes" />
-	<!-- device dependent rendering & disable touch zooming -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+		<meta charset="utf-8" />
+		<title>iFridge</title>
 
-	<!-- self-defined css & js -->
-	<script type="text/javascript" src="/js/jquery.js"></script>
-	<link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="/css/bootstrap-theme.min.css">
-	<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+		<!-- mobile web app experience related -->
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		<meta name="apple-mobile-web-app-title" content="ifridge" />
+		<link rel="apple-touch-icon" href="/img/apple-touch-icon-iphone.png">
+		<link rel="apple-touch-startup-image" href="/img/startup-image.png">
+
+		<!-- libraries & plugins -->
+		<script type="text/javascript" src="/js/jquery-1.11.2.min.js"></script>
+		<script type="text/javascript" src="/js/jquery.stayInWebApp.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="/css/bootstrap-theme.min.css">
+		<script type="text/javascript" src="/js/bootstrap.min.js"></script>
 		
-
-	<link rel="stylesheet" href="/css/style.css" />
-	<script src="/js/navbar.js"></script>
-<!-- 
+		<!-- self-defined css & js -->
+		<link rel="stylesheet" href="/css/style.css" />
+		<script src="/js/navbar.js"></script>
+{{!-- 
 	<script type="text/javascript">
 	
 	$(document).ready(function(){
@@ -47,7 +52,7 @@
 			return false;
 		});
 	});
-	</script>  -->
+	</script>  --}}
 </head>
 {{!-- <body id="userbody"> --}}
 <body>
@@ -56,21 +61,16 @@
 	<div class="panelB">
 		<h1 id="app">iFridge</h1>
 		<form action="/" id="lg-form" name="lg-form" method="get">
-			
 			<div>
 				<label for="username">Username:</label>
 				<input type="text" name="username" id="username" placeholder="username"/>
 			</div>
-			
 			<div>
 				<label for="password">Password:</label>
 				<input type="password" name="password" id="password" placeholder="password" />
 			</div>
-			
 			<div>				
 				<button type="submit" id="login">Login</button>
-			<!-- </div>
-			<div> -->				
 				<button type="signup" id="signup">Sign up</button>
 			</div>
 			

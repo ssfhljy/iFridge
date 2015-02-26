@@ -10,6 +10,10 @@ $(document).ready(function(){
 
 function initializePage(){
 
+	$(function() {
+    	$.stayInWebApp();
+	});
+
 	// initial navbar look
 	$("#cameraInput").hide();
 	$("#searchBar").hide();
