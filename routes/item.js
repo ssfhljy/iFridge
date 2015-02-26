@@ -15,5 +15,23 @@ exports.showItem = function(req, res){
 		res.render('item', item);
 		// res.json(item);
 	}
+};
 
+exports.deleteItem = function(req, res) {
+	var itemID = req.params.id;
+
+	// find the Item and remove it
+	// YOU MUST send an OK response w/ res.send();
+	models.Item
+		.find({"_id": itemID.toString()})
+		.remove()
+		.exec(afterRemoving);
+
+	function afterRemoving(err) { // this is a callback
+		if(err) {
+			console.log(err); 
+			res.send(500); 
+		}
+		res.redirect('/');
+	}
 };

@@ -3,7 +3,12 @@
 		// });
 
 $(document).ready(function(){
-	//alert("ready");
+	
+	initializePage();
+
+});
+
+function initializePage(){
 
 	// initial navbar look
 	$("#cameraInput").hide();
@@ -19,11 +24,6 @@ $(document).ready(function(){
 		$(this).hide();
 	});
 
-});
-
-
-$(document).ready(function(){
-	// when click search
 	$(".glyphicon-search").click(function(e){
 		e.preventDefault();
 		// $("#searchBar").toggle();
@@ -41,21 +41,30 @@ $(document).ready(function(){
 		$("#cancel").hide();
 	});
 
-	// $(".clickable").parent().click(function(e){
-	// // 	// console.log("clicked:");
-	// // 	// alert("clickable");
-	// 	e.preventDefault();
-	// // 	// alert($this);
-	// // 	$(this).click();
-	// });
+	$('#newItem').click(function(e) {
+		console.log('clicked');
+		var title = $('#new-project-form #title').val();
+		var image_url = $('#new-project-form #image_url').val();
+		var date = $('#new-project-form #date').val();
+		var summary = $('#new-project-form #summary').val();
+		var json = {
+			'project_title': title,
+			'image_url': image_url,
+			'date':  date,
+			'summary': summary
+		};
+		$.post('/project/new', json, function() {
+			window.location.href = '/'; // reload the page
+		});
+	});
 
-/*
-	$().click(function(e){
-		e.preventDefault();
+	$('#deleteItem').click(function(e) {
 
-		// Get the div ID, e.g., "project3"
-		var projectID = $(this).closest('.project').attr('id');
-		// get rid of 'project' from the front of the id 'project3'
-		var idNumber = projectID.substr('project'.length);
-	});*/
-});
+
+		var id = $('this').
+
+		$.post('/'+id+'/delete', function() {
+			window.location.href = '/';
+		});
+	});
+}

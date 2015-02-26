@@ -53,6 +53,7 @@ app.get('/', index.view);
 app.get('/list/:id', list.showList);
 // app.get('/item/:id', item.showItem);
 app.get('/item/:cid/:id', item.showItem);
+app.get('/item/:id/delete', item.deleteItem);
 app.get('/login', login.signIn);
 app.get('/settings', settings.config);
 app.get('/add',add.addItem);

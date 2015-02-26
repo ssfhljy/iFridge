@@ -1,3 +1,13 @@
+html{
+	
+}
+
+body{
+	background-image: url(/img/food.png);
+	background-repeat: repeat;
+	background-attachment: fixed;
+}
+
 #app{
 	font-family: 'Oleo Script', cursive;
 	text-align: center;
@@ -91,51 +101,51 @@ button {
 
 }
 
-
 a, a:hover, a:focus, a:link, a:visited, a:active{
 	text-decoration:none;
-	/*color: rgba(250,150,50,0.8);rgba(205, 133, 63, 0.8);*/
-	color: rgba(255,150,0,1);/*rgba(205, 133, 63, 0.8);*/
-
+	color: rgba(255,150,0,1);
 }
-/*			a:hover{
-				text-decoration: none;
-			}*/
 
+.navbar-fixed-top{
+	height: 1em;
+	background-color: rgba(128,128,128,0.4);
+}
 
-/*	input{
-		font-size: 2em;
-	}*/
+#navContainer{
+	/*height: 1.5em;*/
+	/*background-color: rgba(128,128,128,0.4);*/
+}
 
-.container{
+#bodyContainer{
 
 	/*background-image: url(/img/fruit.jpg);*/
-
 	background-image: url(/img/food.png);
 	background-repeat: repeat;
 	background-attachment: fixed;
 	padding: 1em;
-	padding-bottom: 10em;
-	/*background-image: url(/img/restaurant_icons.png);*/
-	/*background-repeat: no-repeat;*/
+	/*padding-bottom: 10em;*/
 	/*background-size: 100%;*/
-
-
 	/*background-color: rgba(222,222,222,0.5);*/
+}
+
+.content{
+	/*width: 100%;*/
+	margin: 0;
+	padding: 0;
+	border: 0;
+	overflow-y: scroll;
 }
 
 .blur {	
     filter: url(blur.svg#blur); /* FireFox, Chrome, Opera */
-    
     -webkit-filter: blur(2px); /* Chrome, Opera */
        -moz-filter: blur(2px);
         -ms-filter: blur(2px);    
-            filter: blur(2px);
-    
+            filter: blur(2px);   
     filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=2, MakeShadow=false); /* IE6~IE9 */
 }
 
-nav{
+.navbar{
 	margin: 0.1em;
 	text-align: center;
 	background-color: rgba(255,255,255,0.4);
@@ -160,17 +170,24 @@ nav{
 }
 
 .panel{
-	font: 2.2em helvetica bold;
+	font-family: Arial, Helvetica, sans-serif;
+
 	/*font-size: 2em;*/
 	/*font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; */
     font-weight: 300;
 	text-align: center;
-	padding: 0.5em;
+	padding: 0.3em;
 	margin: 0.1em;
 	/*background-color: rgba(222,222,222,0.4);*/
 	border: 0em;
 	background-color: rgba(255,255,255,0.4);
 }
+.panel:hover{
+	/*background-color: rgba(222,222,222,0.8);*/
+
+	background-color: rgba(255,255,255,0.6);
+}
+
 .panelB{
 	margin: 1.5em;
 	padding: 2em;
@@ -178,16 +195,12 @@ nav{
 	background-color: rgba(255,255,255,0.4);
 }
 
-
-.panel:hover{
-	/*background-color: rgba(222,222,222,0.8);*/
-
-	background-color: rgba(255,255,255,0.6);
+.catPanel{
+	font-size : 2.2em;
 }
-
-/*#cname{
-	color: rgba(250,150,50,0.8);
-}*/
+.itemPanel{
+	font-size : 1.5em;
+}
 
 #user{
 	font-family: 'Oleo Script', cursive;
@@ -213,12 +226,10 @@ nav{
 
 }
 
-
 #addForm{
 	text-align: center;
 	color: rgba(255,150,20,1);/*rgba(205, 133, 63, 0.8);*/
 }
-
 
 #Btn{
 	text-align: center;

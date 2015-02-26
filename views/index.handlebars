@@ -1,24 +1,19 @@
 <!DOCTYPE html>
 <html lang="en-US">
 	<head>
-		<!-- set UTF-8 character set -->
 		<meta charset="utf-8" />
+		<!-- full-screen mobile app experience (after save to home screen) -->
 		<meta name="apple-mobile-web-app-capable" content="yes" />
-		<!-- jQuery -->
-		<script src="https://code.jquery.com/jquery.js"></script>
-
 		<!-- device dependent rendering & disable touch zooming -->
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
-
-		<!-- Latest compiled and minified CSS -->
+		
+		<!-- jQuery & BootStrap -->
+		<script src="https://code.jquery.com/jquery.js"></script>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" />
-
-		<!-- Optional theme -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css" />
-
-		<!-- Latest compiled and minified JavaScript -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 
+		<!-- self-defined css & js -->
 		<link rel="stylesheet" href="/css/style.css" />
 		<script src="/js/navbar.js"></script>
 
@@ -26,8 +21,12 @@
  	</head>
 
 	<body>
-		<div class="container">
-
+{{!-- 		<nav class="navbar navbar-default navbar-fixed-top">
+		  <div id="navContainer" class="container">
+		    iFridge
+		  </div>
+		</nav>
+		<div id="bodyContainer" class="container"> --}}
 			<!-- navigation bar -->
 			<nav class="navbar navbar-default" id="navBar">
 				<a href="#"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></a>
@@ -40,21 +39,15 @@
   			</nav>
 
 			<!-- list of categories -->
+			<div class="content">
 			{{#each categories}}
 				<a class="clickable" href="/list/{{id}}">
-				<div class="panel panel-warning" id="{{id}}">
+				<div class="panel panel-warning catPanel" id="{{id}}">
 					{{name}}
 				</div>
 				</a>
 			{{/each}}
+			</div>
 		</div>
 	</body>
-
 </html>
-
-<!-- div {}
-
-#id {}
-
-.class {} -->
-

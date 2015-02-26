@@ -1,7 +1,3 @@
-		// $("input").on("click", function() {
-		// 	//alert($(this).text());
-		// });
-
 $(document).ready(function(){
 	//alert("ready");
 
@@ -20,7 +16,6 @@ $(document).ready(function(){
 	});
 
 });
-
 
 $(document).ready(function(){
 	// when click search
