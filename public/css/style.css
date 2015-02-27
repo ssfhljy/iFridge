@@ -176,7 +176,6 @@ a, a:hover, a:focus, a:link, a:visited, a:active{
 	/*font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; */
     font-weight: 300;
 	text-align: center;
-	padding: 0.1em;
 	margin: 0.1em;
 	/*background-color: rgba(222,222,222,0.4);*/
 	border: 0em;
@@ -196,9 +195,11 @@ a, a:hover, a:focus, a:link, a:visited, a:active{
 }
 
 .catPanel{
+	padding: 0.3em;
 	font-size : 2.2em;
 }
 .itPanel{
+	padding: 0.1em;
 	font-size : 1.8em;
 }
 
