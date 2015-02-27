@@ -29,13 +29,15 @@
 			<!-- navigation bar -->
   			<nav class="navbar navbar-default">
   				<a href="/"><span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span></a>
-				<a href="#"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></a>
+{{!-- 				<a href="#"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></a>
+				<a href="#"><span class="glyphicon" id="cancel" aria-hidden="true">cancel</span></a> --}}
 				<input type="text" id="searchBar"/>
-				<a <center><span class="glyphicon" id="FruitsCategory" aria-hidden="true">{{list.0.category.name}}</a>
-				<a href="#"><span class="glyphicon glyphicon-camera" aria-hidden="true"></span></a>
-				<input type="file" capture="camera" accept="image/*" id="cameraInput" hidden="hidden"/>
-				<a href="#"><span class="glyphicon" id="cancel" aria-hidden="true">cancel</span></a>
-				<a href="#"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span></a>
+				<a href=""><span class="glyphicon" id="FruitsCategory" aria-hidden="true">{{list.0.category.name}}</span></a>
+{{!-- 				<a href="#"><span class="glyphicon glyphicon-camera" aria-hidden="true"></span></a>
+				<input type="file" capture="camera" accept="image/*" id="cameraInput" hidden="hidden"/>--}}
+
+				{{!-- <a href="/settings"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span></a> --}}
+				<a href="/add"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
   			</nav>
 
   			<div class="content">

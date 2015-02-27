@@ -9,14 +9,15 @@ exports.addItem = function(req, res) { 
 	// 		"imageURL": "http://lorempixel.com/400/400/people"			
 	// 	};
 	// data["friends"].push(newFriend);
-	var newItem = {
-		"name": req.query.name,
-		"imageURL": "",
-		"dateExp": req.query.dateExp,
-		"dateAdded": "",
-		"category": req.query.category,
-		"note": ""
-	}
-	data["items"].push(newItem);
+	// 
+	// var newItem = {
+	// 	"name": req.query.name,
+	// 	"imageURL": "",
+	// 	"dateExp": req.query.dateExp,
+	// 	"dateAdded": "",
+	// 	"category": req.query.category,
+	// 	"note": ""
+	// }
+	// data["items"].push(newItem);
 	// res.json(item);
 };

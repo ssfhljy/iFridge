@@ -46,29 +46,46 @@ function initializePage(){
 	});
 
 	$('#newItem').click(function(e) {
-		console.log('clicked');
-		var title = $('#new-project-form #title').val();
-		var image_url = $('#new-project-form #image_url').val();
-		var date = $('#new-project-form #date').val();
-		var summary = $('#new-project-form #summary').val();
+		// console.log('clicked');
+		// 
+		e.preventDefault();
+		var currentDate = new Date();
+	    var day = currentDate.getDate();
+	    var month = currentDate.getMonth() + 1;
+	    var year = currentDate.getFullYear();
+	    var today = month + "/" + day + "/" + year;
+	    var dateExp = $('#InputDateExp').val();
+	    var name = $("#inputItemName").val();
 		var json = {
-			'project_title': title,
-			'image_url': image_url,
-			'date':  date,
-			'summary': summary
+			"name": name,
+	        "user": {"_id": "507f1f7733389439011"},
+	        "category": {"_id": "507f1f77bcf86cd799439011"},
+	        "imageURL": "/img/apple-touch-icon-iphone.png",
+	        "dateExp": dateExp,
+	        "dateAdded": today,
+	        "note": ""
 		};
-		$.post('/project/new', json, function() {
+
+		// console.log("json:"+json+"\n\n");
+
+		$.post('/item/new', json, function() {
+			console.log("B\n");
 			window.location.href = '/'; // reload the page
+			// history.back();
+			console.log("C\n");
 		});
 	});
 
 	$('#deleteItem').click(function(e) {
 
+		var pathname = window.location.pathname;
+		// alert(pathname);
 
-		var id = $('this').
-
-		$.post('/'+id+'/delete', function() {
-			window.location.href = '/';
+		$.get(pathname+"/delete", function() {
+			// var path = pathname.slice(0, pathname.lastIndexOf("/"));
+			// window.location.href = path;
+			window.location.href = pathname+"/delete";
+			// window.location.href = '/';
 		});
 	});
 }
