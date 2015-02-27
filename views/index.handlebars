@@ -47,31 +47,29 @@
 		<div id="bodyContainer" class="container">
 
 
-{{!-- 		<nav class="fixed-nav-bar">
+		<nav class="fixed-nav-bar">
   <div id="edit" class="edit">
-    <a class="sitename" href="/">ifridge</a>
+    {{!-- <a class="sitename" href="/">ifridge</a> --}}
     <!-- Example responsive navigation menu  -->
-    <a class="show" href="#edit">Edit</a><a class="hide" href="#hideedit">Edit</a>
-    <ul class="menu-items">
-      <li><a href="//sixrevisions.com">Home</a></li>
-      <li><a href="//sixrevisions.com/about/">About</a></li>
-      <li><a href="//sixrevisions.com/contact/">Contact</a></li>
-      <li><a href="//twitter.com/sixrevisions">Twitter</a></li>
-      <li><a href="//www.facebook.com/sixrevisions">Facebook</a></li>
-  </ul>
+    <a href="#"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></a>
+    <input type="text" id="searchBar"/>
+
+    <a href=""><span class="glyphicon" id="app" aria-hidden="true">ifridge</span></a>
+    <a href="/settings"><span class="glyphicon glyphicon-cog" aria-hidden="true">
+    <a href="#"><span class="glyphicon" id="cancel" aria-hidden="true">cancel</span></a>
   </div>
-</nav> --}}
+</nav>
 
 
 			<!-- navigation bar -->
-			<nav class="navbar navbar-default" id="navBar">
+{{!-- 			<nav class="navbar navbar-default" id="navBar">
 				<a href="#"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></a>
-				<input type="text" id="searchBar"/>
+				<input type="text" id="searchBar"/> --}}
 				{{!-- <a href="#"><span class="glyphicon glyphicon-camera" aria-hidden="true"></span></a>
 				<input type="file" capture="camera" accept="image/*" id="cameraInput" hidden="hidden"/> --}}
-				<a href="/add"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+{{!-- 				<a href="/add"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 				<a href="#"><span class="glyphicon" id="cancel" aria-hidden="true">cancel</span></a>
-				<a href="/settings"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span></a>
+				<a href="/settings"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span></a> --}}
   			</nav>
 
 			<!-- list of categories -->
@@ -84,6 +82,11 @@
 				</a>
 			{{/each}}
 			</div>
+
+			<nav class="fixed-bottom-bar">
+				<a href="/add"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+			</nav>
+
 		</div>
 	</body>
 </html>
