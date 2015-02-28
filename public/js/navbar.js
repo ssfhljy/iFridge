@@ -49,6 +49,7 @@ function initializePage(){
 		// console.log('clicked');
 		// 
 		e.preventDefault();
+		console.log("clicked");
 		var currentDate = new Date();
 	    var day = currentDate.getDate();
 	    var month = currentDate.getMonth() + 1;
