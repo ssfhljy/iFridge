@@ -1,70 +1,42 @@
 <!DOCTYPE html>
-
 <html>
 <head>
-	<meta charset="utf-8" />
-	<title>iFridge</title>
-
-	<!-- mobile web app experience related -->
-	<meta name="apple-mobile-web-app-capable" content="yes" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
-	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-	<meta name="apple-mobile-web-app-title" content="ifridge" />
-	<link rel="apple-touch-icon" href="/img/apple-touch-icon-iphone.png">
-	<link rel="apple-touch-startup-image" href="/img/startup-image.png">
-
-	<!-- libraries & plugins -->
-	<script type="text/javascript" src="/js/jquery-1.11.2.min.js"></script>
-	<script type="text/javascript" src="/js/jquery.stayInWebApp.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="/css/bootstrap-theme.min.css">
-	<script type="text/javascript" src="/js/bootstrap.min.js"></script>
-	
-	<!-- self-defined css & js -->
-	<link rel="stylesheet" href="/css/style.css" />
-	<script src="/js/navbar.js"></script>     
+	{{> metadata}}	
+	{{> library_includes}}
 </head>
-
 <body>
-	<div class="container">
-		
+	<div class="container">	
 		<!-- navigation bar -->
-			<nav class="navbar navbar-default">
-			<a href="/"><span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span></a>
-				<a href="#"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></a>
-				<input type="text" id="searchBar"/>
-				<!-- <a href="#"><span class="glyphicon glyphicon-camera" aria-hidden="true"></span></a>
-				<input type="file" capture="camera" accept="image/*" id="cameraInput" hidden="hidden"/> -->
-				<!-- <a href="/add"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a> -->
-				<a href="#"><span class="glyphicon" id="cancel" aria-hidden="true">cancel</span></a>
-				<a href="/settings"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span></a>
-  			</nav>
-
-<div class="panelB panelB-primary">{{!-- <a href="/item/{{iid}}"></a> --}}
-		<form id="addForm" role="form">
-
-			<h3>Add an Item</h3>
-	    	<div class="form-group">
-	      		<label for="name">Item Name:</label>
-	      		<input type="text" class="" id="inputItemName" placeholder="Item Name" name="name">
-	    	</div>
-
-	    	<div class="form-group">
-	      		<label for="Category">Category:</label>
-	      		<input type="text" class="" id="inputCategory" placeholder="Item's Category" name="category">
-	    	</div>
-
-	    	<div class="form-group">
-	      		<label for="expDate">Exp Date:</label>
-	      		<input type="text" class="" id="inputDateExp" placeholder="mm/dd/yyyy" name="expDate">
-	    	</div>
-
-	    	<input type="submit" id="newItem" value="Add the Item">
-	    	<input type="button" id="Btn" onclick="window.location.href='/';" value="Cancel">
-	  
-		</form> 
-
-	</div>
+		<nav class="navbar navbar-default">
+			<a href="/"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span></a>
+			<a href="#"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></a>
+			<input type="text" id="searchBar"/>
+			<!-- <a href="#"><span class="glyphicon glyphicon-camera" aria-hidden="true"></span></a>
+			<input type="file" capture="camera" accept="image/*" id="cameraInput" hidden="hidden"/> -->
+			<!-- <a href="/add"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a> -->
+			<a href="#"><span class="glyphicon" id="cancel" aria-hidden="true">cancel</span></a>
+			<a href="/settings"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span></a>
+		</nav>
+		<div class="panelB panelB-primary">
+			{{!-- <a href="/item/{{iid}}"></a> --}}
+			<form id="addForm" role="form">
+				<h3>Add an Item</h3>
+		    	<div class="form-group">
+		      		<label for="name">Item Name:</label>
+		      		<input type="text" class="" id="inputItemName" placeholder="Item Name" name="name">
+		    	</div>
+		    	<div class="form-group">
+		      		<label for="Category">Category:</label>
+		      		<input type="text" class="" id="inputCategory" placeholder="Item's Category" name="category">
+		    	</div>
+		    	<div class="form-group">
+		      		<label for="expDate">Exp Date:</label>
+		      		<input type="text" class="" id="inputDateExp" placeholder="mm/dd/yyyy" name="expDate">
+		    	</div>
+		    	<input type="submit" id="newItem" value="Add the Item">
+		    	<input type="button" id="Btn" onclick="window.location.href='/';" value="Cancel">
+			</form> 
+		</div>
 	</div>
 </body>
 </html>

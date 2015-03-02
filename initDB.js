@@ -1,12 +1,8 @@
-
 /*
   This script will initialize a local Mongo database
   on your machine so you can do development work.
-
   IMPORTANT: You should make sure the
-
       local_database_name
-
   variable matches its value in app.js  Otherwise, you'll have
   initialized the wrong database.
 */

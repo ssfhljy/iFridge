@@ -1,66 +1,33 @@
 <!DOCTYPE html>
 <html lang="en-US">
-	<head>
-		<meta charset="utf-8" />
-		<title>iFridge</title>
-
-		<!-- mobile web app experience related -->
-		<meta name="apple-mobile-web-app-capable" content="yes" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
-		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-		<meta name="apple-mobile-web-app-title" content="ifridge" />
-		<link rel="apple-touch-icon" href="/img/apple-touch-icon-iphone.png">
-		<link rel="apple-touch-startup-image" href="/img/startup-image.png">
-
-		<!-- libraries & plugins -->
-		<script type="text/javascript" src="/js/jquery-1.11.2.min.js"></script>
-		<script type="text/javascript" src="/js/jquery.stayInWebApp.min.js"></script>
-		<link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
-		<link rel="stylesheet" type="text/css" href="/css/bootstrap-theme.min.css">
-		<script type="text/javascript" src="/js/bootstrap.min.js"></script>
-		
-		<!-- self-defined css & js -->
-		<link rel="stylesheet" href="/css/style.css" />
-		<script src="/js/navbar.js"></script>
-	</head>
-
-	<body>
-		<div class="container">
-			<div class="col-sm-12">
-			<!-- navigation bar -->
-  			<nav class="navbar navbar-default">
-  				<a href="/list/{{0.category.id}}"><span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span></a>
+<head>
+	{{> metadata}}	
+	{{> library_includes}}
+</head>
+<body>
+	<div class="container">
+		<div class="col-sm-12">
+		<!-- navigation bar -->
+			<nav class="navbar navbar-default">
+				<a href="/list/{{0.category.id}}"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span></a>
 {{!-- 				<a href="#"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></a>
-				<input type="text" id="searchBar"/>
-				<a href="#"><span class="glyphicon" id="cancel" aria-hidden="true">cancel</span></a> --}}
+			<input type="text" id="searchBar"/>
+			<a href="#"><span class="glyphicon" id="cancel" aria-hidden="true">cancel</span></a> --}}
 {{!-- 				<a href="#"><span class="glyphicon glyphicon-camera" aria-hidden="true"></span></a>
-				<input type="file" capture="camera" accept="image/*" id="cameraInput" hidden="hidden"/> --}}
-				{{!-- <a href="/settings"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span></a> --}}
-  			</nav>
-  			</div>
-			<!-- item details -->
-			{{!-- {{#each item}} --}}
-			<div class="row">
-				<div class="col-sm-12 panelB">
-					<img id="itemImg" src="{{0.imageURL}}">
-					<div id="itemInfo">
-						<h4>{{0.name}}<!-- Blueberry --></h4>
-						<p>Expire: {{0.dateExp}}</p>
-						{{!-- <p>Category: {{category}}</p> --}}
-						<!-- <p>Added on: </p> -->
-						<button id="deleteItem">COMPLETED</button>
-					</div>
+			<input type="file" capture="camera" accept="image/*" id="cameraInput" hidden="hidden"/> --}}
+			{{!-- <a href="/settings"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span></a> --}}
+			</nav>
+			</div>
+		<div class="row">
+			<div class="col-sm-12 panelB">
+				<img id="itemImg" src="{{0.imageURL}}">
+				<div id="itemInfo">
+					<h4>{{0.name}}<!-- Blueberry --></h4>
+					<p>Expire: {{0.dateExp}}</p>
+					<button id="deleteItem">COMPLETED</button>
 				</div>
 			</div>
-			{{!-- {{/each}} --}}
 		</div>
-	</body>
-
+	</div>
+</body>
 </html>
-
-<!-- div {}
-
-#id {}
-
-.class {} -->
-

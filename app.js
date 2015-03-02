@@ -2,7 +2,6 @@
 /**
  * Module dependencies.
  */
-
 var express = require('express');
 var http = require('http');
 var path = require('path');
@@ -10,9 +9,6 @@ var handlebars = require('express3-handlebars')
 var mongoose = require('mongoose');
 
 var index = require('./routes/index');
-// Example route
-// var user = require('./routes/user');
-
 var list = require('./routes/list');
 var item = require('./routes/item');
 var login = require('./routes/login');
@@ -51,8 +47,6 @@ if ('development' == app.get('env')) {
 // Add routes here
 app.get('/', index.view);
 app.get('/list/:id', list.showList);
-// app.get('/item/:id', item.showItem);
-
 app.get('/item/:cid/:id', item.showItem);
 app.get('/item/:cid/:id/delete', item.deleteItem);
 app.get('/login', login.signIn);
@@ -62,7 +56,6 @@ app.post('/item/new',item.createNewItem);
 
 // Example route
 // app.get('/users', user.list);
-
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
 });
