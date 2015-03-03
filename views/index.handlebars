@@ -21,7 +21,7 @@
     <input type="text" id="searchBar"/>
 
     <a href=""><span class="glyphicon title" aria-hidden="true">ifridge</span></a>
-    <a href="/settings"><span class="glyphicon glyphicon-cog" aria-hidden="true">
+    <a href="/settings" class="transition"><span class="glyphicon glyphicon-cog" aria-hidden="true">
     <a href="#"><span class="glyphicon" id="cancel" aria-hidden="true">cancel</span></a>
   </div>
 </nav>
@@ -38,7 +38,7 @@
 			<!-- list of categories -->
 			<div class="content">
 			{{#each categories}}
-				<a class="clickable" href="/list/{{id}}">
+				<a class="clickable transition" href="/list/{{id}}">
 				<div class="panel panel-warning catPanel" id="{{id}}">
 					{{name}}
 				</div>
@@ -46,7 +46,7 @@
 			{{/each}}
 			</div>
 			<nav class="fixed-bottom-bar">
-				<a href="/add"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+				<a href="/add" class="transition"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 			</nav>
 		</div>
 	</body>

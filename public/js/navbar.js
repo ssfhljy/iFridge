@@ -3,10 +3,30 @@
 		// });
 
 $(document).ready(function(){
-	
+	pageFadeIn();
 	initializePage();
+	pageFadeOut();
 
 });
+
+function pageFadeIn(){
+	$("body").css("display", "none");
+    $("body").fadeIn(600);
+    // $("body").animate({width: 'left'}); 
+}
+
+function pageFadeOut(){
+	$("a.transition").click(function(event){
+        event.preventDefault();
+        linkLocation = this.href;
+        $("body").fadeOut(600, redirectPage);
+        // $("body").animate({width: 'right'}, 1200, redirectPage);     
+    });
+         
+    function redirectPage() {
+        window.location = linkLocation;
+    }
+}
 
 function initializePage(){
 
