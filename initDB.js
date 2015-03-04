@@ -108,8 +108,6 @@ function onceClearCategories(err) {
   }
 }
 
-
-
 model.Item
 // itemModel.Item
   .find()

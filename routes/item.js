@@ -11,8 +11,22 @@ exports.showItem = function(req, res){
 	function afterQuery(err, item) {
 		console.log("test~~~: "+item.toString());
 		if(err) console.log(err);
-		console.log("item:"+item+"\n");
-		res.render('item', item);
+		// var dateExp = dateFormatting(item[0]['dateExp']);
+		// item[0]['dateExp'] = dateExp;
+		// console.log("date exp:"+item[0]['dateExp']+";"+dateFormatting(item[0]['dateExp'])+"~~~~~~~~~~~\n");
+		// console.log("item:"+item+"\n");
+		res.render('item', {json: item, 
+				helpers: {
+		formatDate: 
+		function(date){
+			if (typeof(date) == "undefined") {
+				return "Unknown";
+			}
+			return ((date.getMonth() + 1) 
+				+ "/" + date.getUTCDate() 
+				+ "/" + date.getFullYear());
+		}}
+	});
 		// res.json(item);
 	}
 };
@@ -66,3 +80,10 @@ exports.createNewItem = function(req, res) {
 		res.redirect('/');
 	}
 };
+
+// helper
+function dateFormatting(obj){
+	return (obj.getMonth() + 1) 
+		+ "/" + obj.getUTCDate() 
+		+ "/" + obj.getFullYear();
+}

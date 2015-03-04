@@ -8,34 +8,8 @@
 		{{> library_includes}}
  	</head>
 	<body>
-{{!-- 		<nav class="navbar navbar-default navbar-fixed-top">
-		  <div id="navContainer" class="container">
-		    iFridge
-		  </div>
-		</nav>--}}
 		<div id="bodyContainer" class="container">
-<nav class="fixed-nav-bar">
-  <div id="edit" class="edit">
-    <!-- Example responsive navigation menu  -->
-    <a href="#"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></a>
-    <input type="text" id="searchBar"/>
-
-    <a href=""><span class="glyphicon title" aria-hidden="true">ifridge</span></a>
-    <a href="/settings" class="transition"><span class="glyphicon glyphicon-cog" aria-hidden="true">
-    <a href="#"><span class="glyphicon" id="cancel" aria-hidden="true">cancel</span></a>
-  </div>
-</nav>
-			<!-- navigation bar -->
-{{!-- 			<nav class="navbar navbar-default" id="navBar">
-				<a href="#"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></a>
-				<input type="text" id="searchBar"/> --}}
-				{{!-- <a href="#"><span class="glyphicon glyphicon-camera" aria-hidden="true"></span></a>
-				<input type="file" capture="camera" accept="image/*" id="cameraInput" hidden="hidden"/> --}}
-{{!-- 				<a href="/add"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
-				<a href="#"><span class="glyphicon" id="cancel" aria-hidden="true">cancel</span></a>
-				<a href="/settings"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span></a> 
-  			</nav>--}}
-			<!-- list of categories -->
+			{{> navbar}}
 			<div class="content">
 			{{#each categories}}
 				<a class="clickable transition" href="/list/{{id}}">
