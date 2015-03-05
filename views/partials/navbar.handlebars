@@ -5,21 +5,27 @@
     <a href="#"><span class="glyphicon glyphicon-search nav-left-button" aria-hidden="true"></span></a>
     <input type="text" id="searchBar"/>
     <a href="#"><span class="glyphicon" id="cancel" aria-hidden="true">cancel</span></a>
-
     {{/if}}
-	{{#unless categories}}
-	<a href="/" onClick="history.back();return false;"><span class="glyphicon glyphicon-chevron-left nav-left-button" aria-hidden="true"></span></a>
-    {{!-- <a href="/list/{{json.0.category.id}}"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span></a> --}}
-	{{/unless}}
+
+
+    {{!-- real back: for back to list only --}}
+    {{#if json.0.category}}
+    <a href="/list/{{json.0.category.id}}" onclick="history.back();return false;"><span class="glyphicon glyphicon-chevron-left nav-left-button" aria-hidden="true"></span></a>
+    {{else}}
+    	{{#unless categories}}
+        {{!-- broswer back: not work in app mode --}}
+    	<a href="/" onClick="history.back();return false;"><span class="glyphicon glyphicon-chevron-left nav-left-button" aria-hidden="true"></span></a>
+        {{/unless}}
+    {{/if}}
 
     <a href=""><span class="glyphicon title" aria-hidden="true">
     {{#if categories}}
-    	ifridge
+    	iFridge
     {{else}}
     	{{#if list}}
     		{{list.0.category.name}}
     	{{else}}
-    		{{#if user}}settings{{/if}}
+    		{{#if user}}Settings{{/if}}
     	{{/if}}
     {{/if}}
     </span></a>

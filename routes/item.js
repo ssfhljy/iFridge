@@ -9,7 +9,7 @@ exports.showItem = function(req, res){
 	models.Item.find({"_id":id}).populate('category').exec(afterQuery);
 
 	function afterQuery(err, item) {
-		console.log("test~~~: "+item.toString());
+		// console.log("test~~~: "+item.toString());
 		if(err) console.log(err);
 		// var dateExp = dateFormatting(item[0]['dateExp']);
 		// item[0]['dateExp'] = dateExp;
@@ -70,13 +70,11 @@ exports.createNewItem = function(req, res) {
 	});
 
 	newItem.save(afterSaving);
-	console.log("P\n");
 	function afterSaving(err) { // this is a callback
 		if(err) {
 			console.log(err);
 			res.send(500);
 		}
-		console.log("Q\n");
 		res.redirect('/');
 	}
 };
