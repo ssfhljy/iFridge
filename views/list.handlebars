@@ -12,7 +12,10 @@
 		{{#each list}}
 		<!-- items in a category -->
 		<a class="clickable" href="/item/{{category.id}}/{{id}}">
-		<div class="panel panel-primary itPanel" id="{{id}} cname">{{name}}</div>
+		<div class="panel panel-primary itPanel" id="{{id}} cname">
+		<span>{{name}}</span>
+		{{!-- <span>{{daysBetween }}</span> --}}
+		</div>
 		</a>
 		{{/each}}
 		</div>

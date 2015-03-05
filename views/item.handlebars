@@ -7,14 +7,16 @@
 <body>
 	<div class="container">
 	{{>navbar }}
-	
+
 		<div class="row">
 			<div class="col-sm-12 panelB">
 				<img id="itemImg" src="{{json.0.imageURL}}">
 				<div id="itemInfo">
-					<h4>{{json.0.name}}<!-- Blueberry --></h4>
-					<p>Expire: {{json.0.dateExp}}</p>
-					<p>{{formatDate json.0.dateExp}}</p>
+					<h4>{{json.0.name}}</h4>
+					<!-- TODO: category? -->
+					<p>Expire: {{formatDate json.0.dateExp}}<</p>
+					<p>Added: {{formatDate json.0.dateAdded}}</p>
+
 					<button id="deleteItem">COMPLETED</button>
 				</div>
 			</div>
