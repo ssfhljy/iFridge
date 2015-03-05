@@ -3,23 +3,29 @@ html{
 }
 
 body{
-	background-image: url(/img/food.png);
+	background-image: url(/img/fruitblur.jpg);
+	/*background-color: rgba(255, 224, 178, 0.2);*/
 	background-repeat: repeat;
 	background-attachment: fixed;
 }
 
 .title{
-	font-family: 'Oleo Script', cursive;
+	font-family: 'Lobster';
+	font-size: 3em;
 	font-weight: bold;
 	text-align: center;
+	color: rgb(255,255,255);
+	/*text-shadow: 1px 1px rgb(55,71,79);*/
+	text-shadow: 0 0 3px rgb(255,87,34), 0 0 5px rgb(76,175,80);
+/*text-shadow: 0 0 3px #FF0000;*/
 }
 
-#userbody{
-	background-image:url(/img/fruit.jpg);
-	background-repeat: no-repeat;
+/*#userbody{
+	background-image:url(/img/fruitblurh.jpg);
+	background-repeat: no-repeat;s
 	background-size: 100%;
 	font-family: 'Oleo Script', cursive;
-}
+}*/
 
 .lg-container{
 	/*background-image:url(/img/fruit.jpg);*/
@@ -27,7 +33,7 @@ body{
 	margin:2em;
 	padding:1em 1em;
 	border:1px solid #f4f4f4;
-	background:rgba(255,255,255,.5);
+	background:rgba(255,255,255,.6);
 	-webkit-border-radius:1em;
 	-moz-border-radius:1em;
 	border-radius:1em;
@@ -59,14 +65,14 @@ body{
 	font-size: 16px;
 	line-height: 20px;
 	width: 100%;
-	font-family: 'Oleo Script', cursive;
+	font-family: 'helvetica';
 	text-align:center;
 }
 #lg-form div:nth-child(3) {
 	text-align:center;
 }
 #lg-form button{
-	font-family: 'Oleo Script', cursive;
+	font-family: 'Oleo Script';
 	font-size: 18px;
 	border:1px solid #000;
 	padding:5px 10px;
@@ -120,10 +126,10 @@ a, a:hover, a:focus, a:link, a:visited, a:active{
 #bodyContainer{
 
 	/*background-image: url(/img/fruit.jpg);*/
-	background-image: url(/img/food.png);
-	background-repeat: repeat;
+	/*background-image: url(/img/food.png);*/
+	/*background-repeat: repeat;*/
 	background-attachment: fixed;
-	padding: 1em;
+	padding: 1.5em;
 	/*padding-bottom: 10em;*/
 	/*background-size: 100%;*/
 	/*background-color: rgba(222,222,222,0.5);*/
@@ -155,7 +161,10 @@ a, a:hover, a:focus, a:link, a:visited, a:active{
   z-index: 9999;
   width: 100%;
   height: 5em;
-  background-color: rgba(197,198,197,0.7);
+  /*background-color: rgba(197,198,197,0.8);*/
+  /*background-color: rgba(120,144,156,0.8);*/
+  background-color: rgba(176,190,197,0.7);
+  /*background-image: url(/img/fruitblurh.jpg);*/
   text-align: center;
 }
 
@@ -166,7 +175,9 @@ a, a:hover, a:focus, a:link, a:visited, a:active{
   z-index: 9999;
   width: 60px;
   height: 60px;
-  background-color: rgba(255,150,0,0.9);;/*rgba(197,198,197,0.7);*/
+  background-color: rgba(255,150,0,0.9);
+  background-color: rgba(176,190,197,0.7);
+  /*rgba(197,198,197,0.7);*/
   -webkit-border-radius:50%;
   -moz-border-radius:50%;
   border-radius:50%;
@@ -175,7 +186,8 @@ a, a:hover, a:focus, a:link, a:visited, a:active{
   padding: 5px 5px 5px 7px;
 }
 .fixed-bottom-bar:hover{
-  background-color: rgba(255,140,0,1);
+  /*background-color: rgba(255,140,0,1);*/
+  background-color: rgba(176,190,197,0.4);
   width: 59px;
   height: 59px;
 
@@ -203,10 +215,16 @@ a, a:hover, a:focus, a:link, a:visited, a:active{
 .nav-left-button{
 	position: fixed;
 	left: 0.5em;
+	color: rgb(255,255,255);
+	text-shadow: 0 0 3px rgb(255,87,34), 0 0 5px rgb(76,175,80);
+	/*text-shadow:  1px 1px rgb(55,71,79);*/
 }
 .nav-right-button{
 	position: fixed;
 	right: 0.5em;
+	color: rgb(255,255,255);
+	text-shadow: 0 0 3px rgb(255,87,34), 0 0 5px rgb(76,175,80);
+
 }
 .glyphicon-plus{
 	font-size: 3em;
@@ -224,6 +242,7 @@ a, a:hover, a:focus, a:link, a:visited, a:active{
 	margin: 0.5em;
 	width: 12em;
 	height: 2em;
+	/*color:rgb(255,255,255);*/
 }
 
 .panel{
@@ -236,19 +255,24 @@ a, a:hover, a:focus, a:link, a:visited, a:active{
 	margin: 0.1em 0em 0.1em 0em;
 	/*background-color: rgba(222,222,222,0.4);*/
 	border: 0em;
-	background-color: rgba(255,255,255,0.6);
+
+	background-color: rgba(255,255,255,0.7);
+	color: rgba(0,0,0,0.7);
+	/*text-shadow: 0 0 3px rgb(255,87,34), 0 0 5px rgb(76,175,80);*/
+	font-family: 'Oleo Script';
+
 }
 .panel:hover{
 	/*background-color: rgba(222,222,222,0.8);*/
 
-	background-color: rgba(255,255,255,0.5);
+	background-color: rgba(255,255,255,0.6);
 }
 
 .panelB{
 	margin: 1.5em;
 	padding: 2em;
 	border-radius: 1em;
-	background-color: rgba(255,255,255,0.4);
+	background-color: rgba(255,255,255,0.7);
 }
 
 .catPanel{
@@ -256,12 +280,14 @@ a, a:hover, a:focus, a:link, a:visited, a:active{
 	font-size : 2.2em;
 }
 .itPanel{
-	padding: 0.1em;
-	font-size : 1.8em;
+	/*padding: 0.1em;
+	font-size : 1.8em;*/
+	padding: 0.15em;
+	font-size : 2em;
 }
 
 #user{
-	font-family: 'Oleo Script', cursive;
+	font-family: 'Oleo Script';
 	text-align: center;
 }
 
@@ -277,7 +303,7 @@ a, a:hover, a:focus, a:link, a:visited, a:active{
 }
 
 #FruitsCategory{
-	font: 2.3em helvetica bold;
+	font: 3em helvetica bold;
 	font-weight: 300;
 	text-align: center;
 	/*color: rgba(255,104,33,1);*/
@@ -285,122 +311,97 @@ a, a:hover, a:focus, a:link, a:visited, a:active{
 
 #addForm{
 	text-align: center;
-	color: rgba(255,150,20,1);/*rgba(205, 133, 63, 0.8);*/
+	color: rgba(255,150,20,1);/*//**rgba(205, 133, 63, 0.8);
+	/*color: rgba(255,255,255,1);*/
+
 }
 
-#Btn{
+#addform input[type="text"]{
+	border:1px solid rgba(51,51,51,.5);
+	-webkit-border-radius:10px;
+	-moz-border-radius:10px;
+	border-radius:10px;
+	padding: 5px;
+	font-size: 16px;
+	line-height: 20px;
+	width: 100%;
+	font-family: 'helvetica';
+	text-align:center;
+}
+#addform button{
+	font-family: 'Oleo Script';
+	font-size: 18px;
+	border:1px solid #000;
+	padding:5px 10px;
+	border:1px solid rgba(51,51,51,.5);
+	-webkit-border-radius:10px;
+	-moz-border-radius:10px;
+	border-radius:10px;
+	
+	-webkit-box-shadow: 2px 1px 1px #aaa;
+	-moz-box-shadow: 2px 1px 1px #aaa;
+	box-shadow: 2px 1px 1px #aaa;
+	cursor:pointer;
+}
+#addform button:active{
+	-webkit-box-shadow: 0px 0px 1px #aaa;
+	-moz-box-shadow: 0px 0px 1px #aaa;
+	box-shadow: 0px 0px 1px #aaa;
+}
+#addform button:hover{
+	background:#f4f4f4;
+}
+
+#signoutForm{
+	text-align: center;
+	color: rgba(255,150,20,1);/*//**rgba(205, 133, 63, 0.8);
+	/*color: rgba(255,255,255,1);*/
+}
+#signoutform button{
+	font-family: 'Oleo Script';
+	font-size: 18px;
+	border:1px solid #000;
+	padding:5px 10px;
+	border:1px solid rgba(51,51,51,.5);
+	-webkit-border-radius:10px;
+	-moz-border-radius:10px;
+	border-radius:10px;
+	
+	-webkit-box-shadow: 2px 1px 1px #aaa;
+	-moz-box-shadow: 2px 1px 1px #aaa;
+	box-shadow: 2px 1px 1px #aaa;
+	cursor:pointer;
+}
+#signoutform button:active{
+	-webkit-box-shadow: 0px 0px 1px #aaa;
+	-moz-box-shadow: 0px 0px 1px #aaa;
+	box-shadow: 0px 0px 1px #aaa;
+}
+#signoutform button:hover{
+	background:#f4f4f4;
+}
+
+/*#Btn{
 	text-align: center;
 	padding: 0.25em;
 	margin: 1em;
-	color: rgba(255,150,0,1);/*rgba(205, 133, 63, 0.8);*/
-	background-color: rgba(255,255,255,0.5);
+	color: rgba(255,150,0,1);
 	border: 0;
-}
+}*/
+/*#newItem{
+	text-align: center;
+	padding: 0.25em;
+	margin: 1em;
+	color: rgba(255,150,0,1);
+	border: 0;
 
+
+}*/
+/*
 #Btn:hover{
-	background-color: rgba(255,255,255,0.8);
-}
-
-
-/* The element at the top of the page right after the fixed navigation bar
-   MUST have sufficient top margin or else it will be covered by the bar */
-/*.content {
-  margin-top: 3em;
+	background-color: rgba(255,255,255,0.7);
 }*/
 
-/* Example responsive navigation menu  */
-/*.fixed-nav-bar li, .fixed-nav-bar a { 
-  height: 50px;
-  line-height: 50px;
-}
-.edit {
-  width: 90%;
-  max-width: 960px;
-  margin: 0 auto;
-}
-.edit a, .edit a:visited {
-  color: #ffffff;
-}
-.edit a:hover, .edit a:target {
-  color: #ebebeb;
-}
-.menu-items {
-  display: inline-block;
-}
-.sitename {
-  display: inline-block;
-  margin-right: 20px;
-  margin-left: 10px;
-}
-a.sitename, a:visited.sitename {
-  color: #e0e0e0;
-}
-.menu-items li {
-  display: inline-block;
-  margin-right: 10px;
-  margin-left: 10px;
-}
-.menu-items a {
-  text-decoration: none;
-}
-.show, .hide {
-  display: none;
-  padding-left: 15px;
-  background-color: transparent;
-  background-repeat: no-repeat;
-  background-position: center left;
-  color: #dde1e2;
-}
-.show {
-  background-image: url(/img/down-arrow-icon.png);
-}
-.hide {
-  background-image: url(/img/up-arrow-icon.png);
-}
-
-@media only screen and (max-width: 800px) {
-  .menu { 
-    position: relative;
-    width: 100%;
-  }
-  .sitename {
-    position: absolute;
-    top: 0;
-    left: 15px;
-    margin-left: 0px;
-  }
-  .menu-items {
-    display: none; 
-    width: 100%;
-    margin-top: 50px;
-    background-color: #008378;
-  }
-  .menu-items li {
-    display: block;
-    text-align: center;
-  }
-  .show, .hide {  
-    position: absolute;
-    top: 0;
-    right: 15px;
-  }
-  .show {
-    display: inline-block;
-  }
-  .hide {
-    display: none;
-  }
-  #menu:target .show {
-    display: none;
-  }
-  #menu:target .hide, #menu:target .menu-items {
-    display: inline-block;
-  }
-}
-
-@media only screen and (max-width: 220px) {
-  .sitename, .show, .hide {
-    font-size: 14px;
-  }
+/*#newItem:hover{
+	background-color: rgba(255,255,255,0.7);
 }*/
-

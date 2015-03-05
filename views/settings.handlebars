@@ -3,16 +3,19 @@
 	<head>
 		{{> metadata}}	
 		{{> library_includes}}
-		<script src="/js/util.js"></script>
+<script src="/js/util.js"></script>
 	</head>
 
 <body>
 	{{>navbar }}
 	<div class="container">
+
 		{{>navbar }}
 
-		<!-- item details -->
+		<!-- item details 
+		-->
 		<div>
+		<form action="/" id="signoutform" name="signoutform" method="get">
 			<!-- TODO: color & notification settings -->
 
 			<!-- user info & logout -->
@@ -22,6 +25,7 @@
 			<h3 id="userInfo">j4tao</h3>
 			<button id="logout">Sign Out</button>
 			</div>
+		</form>
 		</div>
 	</div>
 </body>
