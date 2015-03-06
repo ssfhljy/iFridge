@@ -78,6 +78,7 @@ function initializePage(){
 	    // console.log("mongo log dateExp:"+dateExp+"\n");
 	    // alert("mongo log dateExp:"+dateExp+"\n");
 	    var name = $("#inputItemName").val();
+	    if (name == "undefined")
 		var json = {
 			"name": name,
 	        "user": {"_id": "507f1f7733389439011"},
