@@ -12,7 +12,15 @@
 		"name": "Vegetables"
 	},
 	{
-		"_id": "507f1f77bcf86cd722239011",
+		"_id": "507f1f77bcf86cd822239011",
 		"name": "Meat"
+	}
+	{
+		"_id": "507f1f999995448377339011",
+		"name": "Soft Drinks"
+	}
+	{
+		"_id": "507f1f223235899989339011",
+		"name": "Alcohol"
 	}
 ]

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		{{> metadata}}
+		<meta name="apple-mobile-web-app-title" content="iFridge" />
+		<link rel="apple-touch-icon" href="/img/apple-touch-icon-iphone.png">
+		<link rel="apple-touch-startup-image" href="/img/startup-image.png">
+		{{> library_includes}}
+		<style type="text/css">
+		.alternate{
+			font-size: 2em;
+			margin-top: 1em;
+			position: fixed;
+			left: 2em;
+			color: rgb(255,255,255);
+			text-shadow: 0 0 3px rgb(255,87,34), 0 0 5px rgb(76,175,80);
+		}
+		</style>
+		<script type="text/javascript" src="/js/analytic.js" ></script>
+ 	</head>
+	<body>
+		<div class="container">
+
+<nav class="fixed-nav-bar">
+  <div id="edit" class="edit">
+    <!-- Example responsive navigation menu  -->
+    <a href="#"><span class="glyphicon glyphicon-search nav-left-button" aria-hidden="true"></span></a>
+    <input type="text" id="searchBar"/>
+    <a href="#"><span class="glyphicon" id="cancel" aria-hidden="true">cancel</span></a>
+    <a href="/add" class="transition"><span class="glyphicon glyphicon-plus alternate version_b" aria-hidden="true"></span></a>
+
+    <a href=""><span class="glyphicon title" aria-hidden="true">
+    	iFridge
+    </span></a>
+
+    <a href="/settings" class="transition"><span class="glyphicon glyphicon-cog nav-right-button" aria-hidden="true">
+  </div>
+</nav>
+
+			{{!-- {{> navbar}} --}}
+			<div class="content">
+			{{#each categories}}
+				<a class="clickable transition" href="/list/{{id}}">
+				<div class="panel panel-primary catPanel" id="{{id}}">
+					{{name}}
+				</div>
+				</a>
+			{{/each}}
+			</div>
+			<!--
+			<nav class="fixed-bottom-bar">
+				<a href="/add" class="transition"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+			</nav>-->
+		</div>
+	</body>
+</html>

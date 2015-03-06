@@ -69,6 +69,8 @@ exports.createNewItem = function(req, res) {
         "note": form_data['note']
 	});
 
+	// console.log("added:"+newItem.toString()+"\n");
+
 	newItem.save(afterSaving);
 	function afterSaving(err) { // this is a callback
 		if(err) {

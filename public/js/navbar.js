@@ -6,7 +6,6 @@ $(document).ready(function(){
 	pageFadeIn();
 	initializePage();
 	pageFadeOut();
-
 });
 
 function pageFadeIn(){
@@ -75,7 +74,9 @@ function initializePage(){
 	    var month = currentDate.getMonth() + 1;
 	    var year = currentDate.getFullYear();
 	    var today = month + "/" + day + "/" + year;
-	    var dateExp = $('#InputDateExp').val();
+	    var dateExp = $("#inputDateExp").val();
+	    // console.log("mongo log dateExp:"+dateExp+"\n");
+	    // alert("mongo log dateExp:"+dateExp+"\n");
 	    var name = $("#inputItemName").val();
 		var json = {
 			"name": name,

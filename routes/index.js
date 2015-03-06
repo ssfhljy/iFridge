@@ -10,8 +10,12 @@ exports.view = function(req, res){
 
 		if(err) console.log(err);
 
-		res.render('index', { 'categories': categories });
-		// res.json(categories);
+		var random_num = Math.random();
+  		if(random_num > 0.5){
+			res.render('index', { 'categories': categories });
+		}else{
+			res.render('index_alternate', { 'categories': categories });
+		}
 	}
 };
 

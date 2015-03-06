@@ -13,7 +13,10 @@
 		<!-- items in a category -->
 		<a class="clickable" href="/item/{{category.id}}/{{id}}">
 		<div class="panel panel-primary itPanel" id="{{id}} cname">
-		<span>{{name}}</span>
+		<span class="">{{name}}</span>
+		{{#if daysBeforeExp}}
+		<span class="exp pull-right" {{#if color}}style="color:red;"{{/if}}>{{daysBeforeExp}}</span>
+		{{/if}}
 		{{!-- <span>{{daysBetween }}</span> --}}
 		</div>
 		</a>
