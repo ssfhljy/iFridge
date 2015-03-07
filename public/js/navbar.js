@@ -78,7 +78,7 @@ function initializePage(){
 	    // console.log("mongo log dateExp:"+dateExp+"\n");
 	    // alert("mongo log dateExp:"+dateExp+"\n");
 	    var name = $("#inputItemName").val();
-	    if (name){
+	    if (name && dateExp){
 			var json = {
 				"name": name,
 		        "user": {"_id": "507f1f7733389439011"},
@@ -97,8 +97,10 @@ function initializePage(){
 				// history.back();
 				console.log("C\n");
 			});	    	
+	    }else if(name){
+	    	alert("Sorry, cannot add a item with no expiration date.");
 	    }else{
-	    	alert("Sorry, cannot add a item with no name");
+	    	alert("Sorry, cannot add a item with no name.");
 	    }
 	});
 
