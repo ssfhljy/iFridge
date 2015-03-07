@@ -78,25 +78,28 @@ function initializePage(){
 	    // console.log("mongo log dateExp:"+dateExp+"\n");
 	    // alert("mongo log dateExp:"+dateExp+"\n");
 	    var name = $("#inputItemName").val();
-	    if (name == "undefined")
-		var json = {
-			"name": name,
-	        "user": {"_id": "507f1f7733389439011"},
-	        "category": {"_id": "507f1f77bcf86cd799439011"},
-	        "imageURL": "/img/apple-touch-icon-iphone.png",
-	        "dateExp": dateExp,
-	        "dateAdded": today,
-	        "note": ""
-		};
+	    if (name){
+			var json = {
+				"name": name,
+		        "user": {"_id": "507f1f7733389439011"},
+		        "category": {"_id": "507f1f77bcf86cd799439011"},
+		        "imageURL": "/img/apple-touch-icon-iphone.png",
+		        "dateExp": dateExp,
+		        "dateAdded": today,
+		        "note": ""
+			};
 
-		// console.log("json:"+json+"\n\n");
+			// console.log("json:"+json+"\n\n");
 
-		$.post('/item/new', json, function() {
-			console.log("B\n");
-			window.location.href = '/'; // reload the page
-			// history.back();
-			console.log("C\n");
-		});
+			$.post('/item/new', json, function() {
+				console.log("B\n");
+				window.location.href = '/'; // reload the page
+				// history.back();
+				console.log("C\n");
+			});	    	
+	    }else{
+	    	alert("Sorry, cannot add a item with no name");
+	    }
 	});
 
 	$('#deleteItem').click(function(e) {
