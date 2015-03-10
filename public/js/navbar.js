@@ -10,7 +10,7 @@ $(document).ready(function(){
 
 function pageFadeIn(){
 	$("body").css("display", "none");
-    $("body").fadeIn(800);
+    $("body").fadeIn(900);
     // $("body").animate({width: 'left'}); 
 }
 
@@ -18,7 +18,7 @@ function pageFadeOut(){
 	$("a.transition").click(function(event){
         event.preventDefault();
         linkLocation = this.href;
-        $("body").fadeOut(1000, redirectPage);
+        $("body").fadeOut(1100, redirectPage);
         // $("body").animate({width: 'right'}, 1200, redirectPage);     
     });
          
@@ -109,11 +109,30 @@ function initializePage(){
 		var pathname = window.location.pathname;
 		// alert(pathname);
 
+	// $( "#dialog-confirm" ).dialog({
+ //      resizable: false,
+ //      // height:140,
+ //      modal: true,
+ //      buttons: {
+ //        "Keep it": function() {
+ //          $( this ).dialog( "close" );
+ //        },
+ //        "Delete Anyway": function() {
+ //          $( this ).dialog( "close" );
+ //          // $(this).dialog( "destroy" );
+ //        }
+ //      }
+ //    });
+/*
 		$.get(pathname+"/delete", function() {
 			// var path = pathname.slice(0, pathname.lastIndexOf("/"));
 			// window.location.href = path;
 			window.location.href = pathname+"/delete";
 			// window.location.href = '/';
-		});
+		});*/
+	});
+
+	$("#logout").click(function(e){
+		window.location.href = '/login';
 	});
 }

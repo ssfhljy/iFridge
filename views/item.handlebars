@@ -1,8 +1,12 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-	{{> metadata}}	
+	{{> metadata}}
+{{!--	<link rel="stylesheet" href="//code.jquery.com/ui/1.11.3/themes/smoothness/jquery-ui.css">
+	<script src="//code.jquery.com/ui/1.11.3/jquery-ui.js"></script>--}}
 	{{> library_includes}}
+	
+	<script src="/js/util.js"></script>
 </head>
 <body>
 	<div class="container">
@@ -18,6 +22,11 @@
 					<p>Added: {{formatDate json.0.dateAdded}}</p>
 
 					<button id="deleteItem">DELETE</button>
+
+{{!-- 					<div id="dialog-confirm" title="Empty the recycle bin?">
+  <p><span class="ui-icon ui-icon-alert" style="float:left; margin:0 7px 20px 0;"></span>These items will be permanently deleted and cannot be recovered. Are you sure?</p>
+</div> --}}
+
 				</div>
 			</div>
 		</div>
