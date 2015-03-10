@@ -10,11 +10,11 @@
 
     {{!-- real back: for back to list only --}}
     {{#if json.0.category}}
-    <a href="/list/{{json.0.category.id}}" onclick="history.back();return false;"><span class="glyphicon glyphicon-chevron-left nav-left-button" aria-hidden="true"></span></a>
+    <a href="/list/{{json.0.category.id}}" {{!-- onclick="history.back();return false;" --}}><span class="glyphicon glyphicon-chevron-left nav-left-button" aria-hidden="true"></span></a>
     {{else}}
     	{{#unless categories}}
         {{!-- broswer back: not work in app mode --}}
-    	<a href="/" onClick="history.back();return false;"><span class="glyphicon glyphicon-chevron-left nav-left-button" aria-hidden="true"></span></a>
+    	<a href="/" {{!-- onClick="history.back();return false;" --}}><span class="glyphicon glyphicon-chevron-left nav-left-button" aria-hidden="true"></span></a>
         {{/unless}}
     {{/if}}
 

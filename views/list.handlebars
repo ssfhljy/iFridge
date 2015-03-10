@@ -17,10 +17,15 @@
 		{{#if daysBeforeExp}}
 		<span class="exp pull-right" {{#if color}}style="color:red;"{{/if}}>{{daysBeforeExp}}</span>
 		{{/if}}
+
 		{{!-- <span>{{daysBetween }}</span> --}}
 		</div>
 		</a>
 		{{/each}}
+
+		{{#unless list}}
+		<div class="panelB" style="font-size:1.5em;padding:5%;"> Nothing in this category yet, <a href="/">return</a> to home page and add some items.</div>
+		{{/unless}}
 		</div>
 	</div>
 </body>
