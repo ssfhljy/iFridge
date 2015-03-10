@@ -10,7 +10,7 @@ $(document).ready(function(){
 
 function pageFadeIn(){
 	$("body").css("display", "none");
-    $("body").fadeIn(1000);
+    $("body").fadeIn(800);
     // $("body").animate({width: 'left'}); 
 }
 
@@ -18,7 +18,7 @@ function pageFadeOut(){
 	$("a.transition").click(function(event){
         event.preventDefault();
         linkLocation = this.href;
-        $("body").fadeOut(1200, redirectPage);
+        $("body").fadeOut(1000, redirectPage);
         // $("body").animate({width: 'right'}, 1200, redirectPage);     
     });
          

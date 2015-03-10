@@ -10,12 +10,17 @@ exports.view = function(req, res){
 
 		if(err) console.log(err);
 
+		res.render('index', { 'categories': categories });
+
+		// random page alternate for A/B Test
+		/*
 		var random_num = Math.random();
   		if(random_num > 0.5){
 			res.render('index', { 'categories': categories });
 		}else{
 			res.render('index_alternate', { 'categories': categories });
 		}
+		*/
 	}
 };
 
