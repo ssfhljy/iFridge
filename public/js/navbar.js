@@ -75,6 +75,7 @@ function initializePage(){
 	    var year = currentDate.getFullYear();
 	    var today = month + "/" + day + "/" + year;
 	    var dateExp = $("#inputDateExp").val();
+	    var cat = $("#inputCategory").val();
 	    // console.log("mongo log dateExp:"+dateExp+"\n");
 	    // alert("mongo log dateExp:"+dateExp+"\n");
 	    var name = $("#inputItemName").val();
@@ -82,7 +83,7 @@ function initializePage(){
 			var json = {
 				"name": name,
 		        "user": {"_id": "507f1f7733389439011"},
-		        "category": {"_id": "507f1f77bcf86cd799439011"},
+		        "category": cat,
 		        "imageURL": "/img/apple-touch-icon-iphone.png",
 		        "dateExp": dateExp,
 		        "dateAdded": today,
