@@ -3,7 +3,7 @@
 <head>
 	{{> metadata}}	
 	{{> library_includes}}
-<style type="text/css" href="/css/datepicker.css"></style>
+{{!--<style type="text/css" href="/css/datepicker.css"></style>
 <script type="text/javascript" src="/js/bootstrap-datepicker.js"></script>
 
 	<script type="text/javascript">
@@ -12,7 +12,7 @@ $(function(){
       format: 'mm/dd/yyyy'
     });
 });
-	</script>
+	</script>--}}
 
 </head>
 <body>
@@ -48,7 +48,7 @@ $(function(){
  --}}
 		    	<div class="form-group">
 		      		<label for="expDate">Expiration Date:</label>
-		      		<input type="date" class="datepicker" id="inputDateExp" placeholder="mm/dd/yyyy" name="expDate">
+		      		<input type="date"  id="inputDateExp" placeholder="mm/dd/yyyy" name="expDate">
 		      	</div>
 
 		    	<button type="submit" id="newItem" value="Add Item">Add Item</button>
