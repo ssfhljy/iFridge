@@ -283,7 +283,7 @@ a, a:hover, a:focus, a:link, a:visited, a:active{
 	padding: 1em 0.5em 0.5em 0.5em;
 	border-radius: 1em;
 	background-color: rgba(255,255,255,0.7);
-	font-size: 1.5em;
+	font-size: 1.2em;
 }
 
 .catPanel{
@@ -401,7 +401,7 @@ a, a:hover, a:focus, a:link, a:visited, a:active{
 	margin-left: 15%;
 	width: 70%;
 	text-align: center;
-	font-size: 1.5em;
+	font-size: 1.2em;
 }
 
 #deleteItem{
