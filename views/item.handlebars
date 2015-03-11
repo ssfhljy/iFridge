@@ -16,19 +16,22 @@
 			<div class="col-sm-12 panelB">
 				<img id="itemImg" src="{{json.0.imageURL}}">
 				<div id="itemInfo">
-					<h4>{{json.0.name}}</h4>
+					<h3 style="font-size: 1em;">{{json.0.name}}</h3>
 					<!-- TODO: category? -->
 					<p>Expire: {{formatDate json.0.dateExp}}</p>
 					<p>Added: {{formatDate json.0.dateAdded}}</p>
-
-					
-
-{{!-- 					<div id="dialog-confirm" title="Empty the recycle bin?">
-  <p><span class="ui-icon ui-icon-alert" style="float:left; margin:0 7px 20px 0;"></span>These items will be permanently deleted and cannot be recovered. Are you sure?</p>
-</div> --}}
-
 				</div>
-				<button id="deleteItem">DELETE</button>
+
+				<button id="deleteItem">DELETE</button>	
+			</div>
+			<div id="delete_alert" class="alert alert-danger alert-dismissible fade in" role="alert">
+				<button type="button" class="close" data-dismiss="alert" aria-label="Close">{{!-- <span aria-hidden="true">&times;</span> --}}</button>
+				<h4>Are you sure you want to remove this item?</h4>
+				<p> Make sure you only choose to delete when you no longer have this item in your fridge. </p>
+				<p>
+				<button id="confirm_del" type="button" class="btn btn-danger">Delete Anyway</button>
+				<button id="cancel_del" type="button" class="btn btn-default">Keep It</button>
+				</p>
 			</div>
 		</div>
 	</div>

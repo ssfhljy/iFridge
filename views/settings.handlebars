@@ -3,7 +3,7 @@
 	<head>
 		{{> metadata}}	
 		{{> library_includes}}
-		{{!--<script src="/js/util.js"></script>--}}
+		<script src="/js/util.js"></script>
 	</head>
 
 <body>
@@ -26,6 +26,17 @@
 			</div>
 		</form>
 		</div>
+
+		<div id="logout_alert" class="alert alert-danger alert-dismissible fade in" role="alert">
+			<button type="button" class="close" data-dismiss="alert" aria-label="Close">{{!-- <span aria-hidden="true">&times;</span> --}}</button>
+			<h4>Are you sure you want to log out?</h4>
+			<p> You need to log in again to manage your items. </p>
+			<p>
+			<button id="confirm_logout" type="button" class="btn btn-danger">Log Out Anyway</button>
+			<button id="cancel_logout" type="button" class="btn btn-default">Stay Logged In</button>
+			</p>
+		</div>
+
 	</div>
 </body>
 </html>

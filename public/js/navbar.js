@@ -105,9 +105,9 @@ function initializePage(){
 	    }
 	});
 
-	$('#deleteItem').click(function(e) {
+	// $('#deleteItem').click(function(e) {
 
-		var pathname = window.location.pathname;
+	// 	var pathname = window.location.pathname;
 		// alert(pathname);
 
 	// $( "#dialog-confirm" ).dialog({
@@ -131,9 +131,6 @@ function initializePage(){
 			window.location.href = pathname+"/delete";
 			// window.location.href = '/';
 		});*/
-	});
+	// });
 
-	$("#logout").click(function(e){
-		window.location.href = '/login';
-	});
 }
