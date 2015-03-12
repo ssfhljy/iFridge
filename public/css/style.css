@@ -421,7 +421,7 @@ a, a:hover, a:focus, a:link, a:visited, a:active{
 
 #inputDateExp{
 	/*width: 100%;*/
-	min-width:100%;
+	min-width:95%;
 	/*-webkit-appearance: none;*/
 	line-height: 1.5em;
 	-webkit-border-radius:5px;
